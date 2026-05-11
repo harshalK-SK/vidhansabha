@@ -519,19 +519,19 @@
     <div class="meeting-meta">
         <div class="meta-field">
             <div class="meta-label">Analysis Scope</div>
-            <div class="meta-value">Legislative Sessions &amp; CAG Audit Hearings</div>
+            <div class="meta-value">CAG Audit Committee Hearings</div>
         </div>
         <div class="meta-field">
             <div class="meta-label">Recordings</div>
-            <div class="meta-value">4 recordings</div>
+            <div class="meta-value">2 recordings</div>
         </div>
         <div class="meta-field">
             <div class="meta-label">Total Duration</div>
-            <div class="meta-value">~107 minutes</div>
+            <div class="meta-value">~82 minutes</div>
         </div>
         <div class="meta-field">
             <div class="meta-label">Speakers Identified</div>
-            <div class="meta-value">24 speakers</div>
+            <div class="meta-value">13 speakers</div>
         </div>
         <div class="meta-field">
             <div class="meta-label">Language</div>
@@ -539,7 +539,7 @@
         </div>
         <div class="meta-field">
             <div class="meta-label">Topics Covered</div>
-            <div class="meta-value">Infrastructure, Welfare, MIDC Audit, Haffkine, Film City</div>
+            <div class="meta-value">MIDC Land Allotment, Haffkine Bio-Pharma, Film City Tender</div>
         </div>
         <div class="meta-field">
             <div class="meta-label">Status</div>
@@ -556,15 +556,9 @@
     <!-- Recordings -->
     <div class="section-header">
         <div class="section-title">Recordings</div>
-        <div class="section-badge">4 recordings</div>
+        <div class="section-badge">2 recordings</div>
     </div>
     <div class="recordings-grid">
-        <div class="rec-card" onclick="showView('detail1')">
-            <div class="rec-index">1</div>
-            <div class="rec-info">
-                <div class="rec-title" id="rec1Title"></div>
-                <div class="rec-sub">S-10DEC-01_00 &middot; 4 speakers &middot; ~12 min</div>
-            </div>
             <div class="rec-tags">
                 <span class="stag stag-blue">Infrastructure</span>
                 <span class="stag stag-amber">Housing</span>
@@ -572,12 +566,6 @@
             </div>
             <div class="rec-arrow"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></div>
         </div>
-        <div class="rec-card" onclick="showView('detail2')">
-            <div class="rec-index">2</div>
-            <div class="rec-info">
-                <div class="rec-title" id="rec2Title"></div>
-                <div class="rec-sub">S-10DEC-02_00 &middot; 7 speakers &middot; ~13 min</div>
-            </div>
             <div class="rec-tags">
                 <span class="stag stag-rose">Welfare</span>
                 <span class="stag stag-teal">Irrigation</span>
@@ -620,123 +608,6 @@
     </div>
     <div class="insights-grid" id="overallInsights"></div>
 
-</div>
-
-<!-- ════════════════════════════════════ DETAIL 1 ════════════════════════════════════ -->
-<div class="view" id="view-detail1">
-    <button class="detail-back" onclick="showView('home')">
-        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        Back to overview
-    </button>
-    <div class="detail-header">
-        <h2 id="detail1Title"></h2>
-        <p>S-10DEC-01_00 &middot; 4 speakers identified &middot; ~12 minutes</p>
-    </div>
-    <div class="detail-meta">
-        <div class="dm-field"><div class="dm-label">Topic</div><div class="dm-value" id="d1Topic"></div></div>
-        <div class="dm-field"><div class="dm-label">Speakers</div><div class="dm-value">4</div></div>
-        <div class="dm-field"><div class="dm-label">Duration</div><div class="dm-value">~12 min</div></div>
-        <div class="dm-field"><div class="dm-label">Language</div><div class="dm-value">Marathi / English</div></div>
-        <div class="dm-field"><div class="dm-label">Key Issue</div><div class="dm-value" id="d1Issue"></div></div>
-    </div>
-    <!-- Summary -->
-    <div style="background:var(--surface-1);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;margin-bottom:24px;">
-        <div class="dm-label" style="margin-bottom:8px;">Summary</div>
-        <p id="d1Summary" style="font-size:13px;color:var(--ink-secondary);line-height:1.7;"></p>
-    </div>
-    <!-- Audio -->
-    <div class="audio-strip">
-        <button class="play-btn" id="play1" onclick="togglePlay('audio1','play1')">
-            <svg id="icon-play1" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
-        </button>
-        <div class="audio-mid">
-            <div class="progress-track" id="progress1" onclick="seekAudio(event,'audio1','progress1')">
-                <div class="progress-fill" id="fill1"></div>
-            </div>
-            <div class="audio-times"><span id="current1">00:00</span><span id="duration1">--:--</span></div>
-        </div>
-        <div class="speed-group">
-            <button class="speed-btn" onclick="setSpeed('audio1',0.75,this)">0.75x</button>
-            <button class="speed-btn active" onclick="setSpeed('audio1',1,this)">1x</button>
-            <button class="speed-btn" onclick="setSpeed('audio1',1.5,this)">1.5x</button>
-            <button class="speed-btn" onclick="setSpeed('audio1',2,this)">2x</button>
-        </div>
-        <audio id="audio1" src="S-10DEC-01_00.m4a" preload="metadata"></audio>
-    </div>
-    <!-- Split -->
-    <div class="detail-split">
-        <div class="detail-pane">
-            <div class="pane-top">
-                <div class="pane-icon pane-icon-t"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--blue-600)" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-                <div class="pane-label">Transcript</div>
-            </div>
-            <div class="pane-body"><div class="transcript-scroll" id="transcript1"></div></div>
-        </div>
-        <div class="detail-pane">
-            <div class="pane-top">
-                <div class="pane-icon pane-icon-i"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
-                <div class="pane-label">Insights</div>
-            </div>
-            <div class="pane-body"><div class="insight-stack" id="insights1"></div></div>
-        </div>
-    </div>
-</div>
-
-<!-- ════════════════════════════════════ DETAIL 2 ════════════════════════════════════ -->
-<div class="view" id="view-detail2">
-    <button class="detail-back" onclick="showView('home')">
-        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        Back to overview
-    </button>
-    <div class="detail-header">
-        <h2 id="detail2Title"></h2>
-        <p>S-10DEC-02_00 &middot; 7 speakers identified &middot; ~13 minutes</p>
-    </div>
-    <div class="detail-meta">
-        <div class="dm-field"><div class="dm-label">Topic</div><div class="dm-value" id="d2Topic"></div></div>
-        <div class="dm-field"><div class="dm-label">Speakers</div><div class="dm-value">7</div></div>
-        <div class="dm-field"><div class="dm-label">Duration</div><div class="dm-value">~13 min</div></div>
-        <div class="dm-field"><div class="dm-label">Language</div><div class="dm-value">Marathi / English</div></div>
-        <div class="dm-field"><div class="dm-label">Key Issue</div><div class="dm-value" id="d2Issue"></div></div>
-    </div>
-    <div style="background:var(--surface-1);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;margin-bottom:24px;">
-        <div class="dm-label" style="margin-bottom:8px;">Summary</div>
-        <p id="d2Summary" style="font-size:13px;color:var(--ink-secondary);line-height:1.7;"></p>
-    </div>
-    <div class="audio-strip">
-        <button class="play-btn" id="play2" onclick="togglePlay('audio2','play2')">
-            <svg id="icon-play2" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
-        </button>
-        <div class="audio-mid">
-            <div class="progress-track" id="progress2" onclick="seekAudio(event,'audio2','progress2')">
-                <div class="progress-fill" id="fill2"></div>
-            </div>
-            <div class="audio-times"><span id="current2">00:00</span><span id="duration2">--:--</span></div>
-        </div>
-        <div class="speed-group">
-            <button class="speed-btn" onclick="setSpeed('audio2',0.75,this)">0.75x</button>
-            <button class="speed-btn active" onclick="setSpeed('audio2',1,this)">1x</button>
-            <button class="speed-btn" onclick="setSpeed('audio2',1.5,this)">1.5x</button>
-            <button class="speed-btn" onclick="setSpeed('audio2',2,this)">2x</button>
-        </div>
-        <audio id="audio2" src="S-10DEC-02_00.m4a" preload="metadata"></audio>
-    </div>
-    <div class="detail-split">
-        <div class="detail-pane">
-            <div class="pane-top">
-                <div class="pane-icon pane-icon-t"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--blue-600)" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-                <div class="pane-label">Transcript</div>
-            </div>
-            <div class="pane-body"><div class="transcript-scroll" id="transcript2"></div></div>
-        </div>
-        <div class="detail-pane">
-            <div class="pane-top">
-                <div class="pane-icon pane-icon-i"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
-                <div class="pane-label">Insights</div>
-            </div>
-            <div class="pane-body"><div class="insight-stack" id="insights2"></div></div>
-        </div>
-    </div>
 </div>
 
 <!-- ════════════════════════════════════ DETAIL 3 ════════════════════════════════════ -->
@@ -919,19 +790,11 @@ const DATA = {
 
     texts: {
         en: {
-            rec1Title: "Infrastructure & Urban Housing",
-            rec2Title: "Welfare Schemes & Governance",
             rec3Title: "MIDC Land Allotment — CAG Audit Review",
             rec4Title: "Haffkine Bio-Pharma & Film City — CAG Audit Review",
-            d1Topic: "Infrastructure, Urban Development, Housing",
-            d2Topic: "Welfare Fraud, Irrigation, Social Issues",
             d3Topic: "MIDC Plot Allotment, CAG Audit, Industrial Policy",
-            d1Issue: "Andheri subway waterlogging, old building redevelopment",
-            d2Issue: "Ladki Bahin Yojana irregularities, Akola incident",
             d3Issue: "66 plots allotted violating tender policy; undersized 100 sqm plots",
-            summary: "These recordings cover three distinct proceedings. Session 1 addressed the 50-year-old Andheri subway waterlogging crisis and 15,000+ old buildings in South Mumbai blocked by a High Court stay. Session 2 saw debate on Rs 5,136 crore irregularities in the Ladki Bahin Yojana, Washim river-linking projects, and a tragic school negligence case in Akola. Recording 3 is a CAG audit committee hearing examining MIDC's allotment of 66 industrial plots in Hingna (Nagpur) in violation of e-bidding policy — undersized at 100 sqm instead of the mandated 200 sqm, with non-standard lease premiums.",
-            d1Summary: "MLA Murji Patel raised the chronic Andheri subway waterlogging issue for the third time. The Minister acknowledged the severity and reported that IIT Mumbai has proposed a 981-metre enclosed tunnel. The Chair committed to a post-session meeting with BMC officials and consultants. A separate discussion addressed 15,000+ old buildings in South Mumbai awaiting redevelopment under DCPR 33-7/33-9, with Policy 79-1A stayed by the Bombay High Court for 6 months.",
-            d2Summary: "The session covered four major topics: (1) Washim district's inclusion in the Nalganga-Wainganga river-linking project and Chakatirth dam progress, (2) a 13-year-old girl's suicide in Akola due to harassment and school negligence, (3) the Lift/Escalator Act 2017 pending implementation, and (4) extensive debate on Ladki Bahin Yojana irregularities with 26 lakh flagged beneficiaries. The Minister clarified only ~4 lakh cases need scrutiny and recovery from ineligible recipients is underway.",
+            summary: "These recordings cover two CAG audit committee hearings. Recording 1 examines MIDC's allotment of 66 industrial plots in Hingna (Nagpur) in violation of e-bidding policy — undersized at 100 sqm instead of the mandated 200 sqm, with non-standard lease premiums. Recording 2 covers the Haffkine Bio-Pharmaceutical Corporation's Rs 1.59 crore income tax non-compliance, Rs 50.69 crore polio vaccine procurement loss, and the Maharashtra Film City's Rs 2.33 crore irregular cleaning contract tender.",
             d3Summary: "This CAG audit committee hearing examined MIDC's allotment of 66 industrial plots in 10 industrial areas, primarily Hingna (Nagpur). Three major violations were identified: (1) direct nomination allotments instead of mandatory e-bidding in areas where 80%+ plots were already allotted, (2) plots sized at 100 sqm instead of the minimum 200 sqm, and (3) non-standard lease premium rates. MIDC's CEO defended the deviations as Board-approved decisions under the MIDC Act 1961, citing local demand from small-scale industries. The committee directed MIDC to submit a detailed explanation citing specific legal sections and Board resolutions within 15 days.",
             transcripts: {
                 1: [
@@ -1415,359 +1278,15 @@ const DATA = {
                 ]
             }
         },
-        hi: {
-            rec1Title: "बुनियादी ढांचा एवं शहरी आवास",
-            rec2Title: "कल्याणकारी योजनाएं एवं शासन",
-            rec3Title: "एमआयडीसी भूखंड आवंटन — महालेखापरीक्षक ऑडिट समीक्षा",
-            rec4Title: "हाफकिन बायो-फार्मा और फिल्म सिटी — सीएजी ऑडिट समीक्षा",
-            d1Topic: "बुनियादी ढांचा, शहरी विकास, आवास",
-            d2Topic: "कल्याण धोखाधड़ी, सिंचाई, सामाजिक मुद्दे",
-            d3Topic: "एमआयडीसी भूखंड आवंटन, महालेखापरीक्षक ऑडिट, औद्योगिक नीति",
-            d1Issue: "अंधेरी सबवे जलभराव, पुरानी इमारतों का पुनर्विकास",
-            d2Issue: "लाडकी बहीण योजना अनियमितताएं, अकोला घटना",
-            d3Issue: "66 भूखंड टेंडर नीति के उल्लंघन में; 100 वर्ग मीटर के अनुचित भूखंड",
-            d4Topic: "आयकर अनुपालन विफलता, पोलियो खरीद हानि, कर्मचारी दुराचार",
-            d4Issue: "₹1.59 करोड़ कर हानि; ₹50.69 करोड़ पोलियो खरीद हानि",
-            d4Summary: "हाफकिन जैव-औषधी निगम ने वित्तीय वर्ष 2009-10 का आयकर रिटर्न समय पर दाखिल नहीं किया, जिससे ₹1.59 करोड़ की हानि हुई। तीन अधिकारी जिम्मेदार ठहराए गए — एक (सुभाष शंकरवार) नोटिस स्वीकारने से इनकार कर रहा है। पोलियो टीका खरीद में केंद्रीय सतर्कता आयोग के दिशानिर्देशों का उल्लंघन करने से ₹50.69 करोड़ की हानि हुई। समिति ने एक महीने में आपराधिक कार्यवाही शुरू करने का निर्देश दिया।",
-            summary: "महाराष्ट्र विधानसभा के इस सत्र में बुनियादी ढांचे, कल्याण और शासन के महत्वपूर्ण विषयों पर चर्चा हुई। सत्र 1 में 50 साल पुरानी अंधेरी सबवे जलभराव समस्या (IIT मुंबई ने 981 मीटर टनल का प्रस्ताव दिया) और दक्षिण मुंबई की 15,000+ पुरानी इमारतों के पुनर्विकास पर चर्चा हुई, जो नीति 79-1A पर उच्च न्यायालय की रोक से अटका है। सत्र 2 में लाडकी बहीण योजना में कथित ₹5,136 करोड़ की धोखाधड़ी (26 लाख फर्जी लाभार्थी), वाशिम नदी-जोड़ परियोजनाओं और अकोला में 13 वर्षीय बालिका की आत्महत्या पर गहन बहस हुई।",
-            d1Summary: "विधायक मुर्जी पटेल ने अंधेरी सबवे जलभराव की समस्या तीसरी बार उठाई। मंत्री ने गंभीरता स्वीकारी और बताया कि IIT मुंबई ने 981 मीटर बंद सुरंग का प्रस्ताव दिया है। अध्यक्ष ने सत्र के बाद BMC अधिकारियों और सलाहकारों के साथ बैठक का वचन दिया। अलग चर्चा में DCPR 33-7/33-9 के तहत दक्षिण मुंबई की 15,000+ पुरानी इमारतों के पुनर्विकास पर बात हुई, जहां नीति 79-1A पर बॉम्बे हाई कोर्ट की 6 महीने की रोक है।",
-            d2Summary: "सत्र में चार प्रमुख विषय शामिल थे: (1) नलगंगा-वैनगंगा नदी-जोड़ परियोजना में वाशिम का समावेश और चाकातीर्थ बांध प्रगति, (2) अकोला में उत्पीड़न और स्कूल की लापरवाही से 13 वर्षीय बालिका की आत्महत्या, (3) लिफ्ट/एस्केलेटर अधिनियम 2017 का लंबित कार्यान्वयन, और (4) 26 लाख संदिग्ध लाभार्थियों के साथ लाडकी बहीण योजना अनियमितताओं पर विस्तृत बहस। मंत्री ने स्पष्ट किया कि केवल ~4 लाख मामलों की जांच आवश्यक है।",
-            d3Summary: "इस महालेखापरीक्षक ऑडिट समिति सुनवाई में एमआयडीसी द्वारा 10 औद्योगिक क्षेत्रों में 66 भूखंडों के आवंटन की जांच हुई। तीन प्रमुख उल्लंघन: (1) 80%+ भूखंड आवंटित क्षेत्रों में अनिवार्य ई-बिडिंग के बजाय सीधा नामांकन, (2) न्यूनतम 200 वर्ग मीटर के बजाय 100 वर्ग मीटर के भूखंड, (3) अनियमित भाडेपट्टी दरें। एमआयडीसी मुख्य कार्यकारी अधिकारी ने एमआयडीसी अधिनियम 1961 के तहत मंडळ के अधिकारों का हवाला दिया। समिति ने 15 दिन में विस्तृत स्पष्टीकरण मांगा।",
-            transcripts: {
-                1: [
-                    {time:0, speaker:"A", role:"अध्यक्ष", text:"लक्षवेधी क्रमांक एक। मुर्जी पटेल साहब।"},
-                    {time:5, speaker:"B", text:"अध्यक्ष महोदय, लक्षवेधी क्रमांक 12, 14 से 12। लक्षवेधी क्रमांक एक। अध्यक्ष महोदय, छपे हुए अनुसार।"},
-                    {time:10, speaker:"C", text:"अध्यक्ष महोदय, अंधेरी पूर्व-पश्चिम जोड़ने वाला यह सबवे, अंधेरी पूर्व क्षेत्र का है। अध्यक्ष महोदय, आज सबवे..."},
-                    {time:14, speaker:"A", role:"अध्यक्ष", text:"कल कल लेंगे, बाकी बचे हुए कल ले लेंगे।"},
-                    {time:18, speaker:"C", text:"यह 50 सालों से पानी में डूबा रहता है अध्यक्ष महोदय।"},
-                    {time:22, speaker:"A", role:"अध्यक्ष", text:"अनेकों को मौका दिया है। सभी 100 लोगों को मौका नहीं दे सकते। मुर्जी पटेल साहब लक्षवेधी शुरू करें।"},
-                    {time:28, speaker:"C", role:"आमदार", text:"अध्यक्ष महोदय, यह सबवे पिछले 50 सालों से पानी में डूबा रहता है। मुंबई शहर में पांच महीने बारिश होती है। यह तीसरी बार मैंने सभागृह में लक्षवेधी लगाई है। मंत्री महोदय जवाब देते हैं, उसके बाद कोई कार्रवाई नहीं होती। इस सबवे में पानी भरने से मेरे विधानसभा क्षेत्र का लगभग 30% हिस्सा पानी में डूब जाता है — नागरदास रोड, गुंदेवली, मोगरापाडा, आंबावाडी — पूरा इलाका बारिश में पानी में डूबा रहता है और सबवे भरने से ट्रैफिक जाम होता है। सरकार से विनंती है, आने वाली बारिश से पहले इसका स्थायी समाधान निकलेगा क्या? मंत्री महोदय जवाब दें।"},
-                    {time:102, speaker:"D", role:"मंत्री", text:"अध्यक्ष महोदय, सदस्य मुर्जी पटेल ने यह मुद्दा सच में तीन बार उठाया है, अत्यंत गंभीर है। यह नाला सबवे से बहता है और हमेशा पानी भरता है। उस समय महानगरपालिका पंप लगाती है, पानी निकालती है, ट्रैफिक बंद करती है — ऐसे अस्थायी उपाय किए जाते हैं। नाला चौड़ीकरण के लिए सलाहकार कंपनी ने सुझाव दिया था लेकिन वहां घर होने के कारण चौड़ीकरण संभव नहीं। इसलिए महानगरपालिका और IIT ने सलाहकार समिति नियुक्त की, उन्होंने बताया कि 981 मीटर लंबा बंदिस्त नाला बनाया जा सकता है। यह रिपोर्ट महानगरपालिका को दी गई है और आर्थिक व्यवहार्यता जांचकर निर्णय लिया जाएगा।"},
-                    {time:181, speaker:"C", role:"आमदार", text:"महोदय, आर्थिक पक्ष जांचते हैं? मुंबई महानगरपालिका बड़ी महानगरपालिका है, उनकी करने की मानसिकता नहीं है। ताई जो जवाब दे रही हैं उससे मैं संतुष्ट नहीं। महानगरपालिका अधिकारी जो लिखकर देते हैं वही मंत्री महोदय बोल रहे हैं। आर्थिक की जरूरत नहीं। आने वाली बारिश से पहले समयसीमा तय करें। आदेश दें — सबवे का समाधान होगा क्या? मुझे तारीख और समयसीमा निश्चित करके जवाब दें।"},
-                    {time:224, speaker:"D", role:"मंत्री", text:"अध्यक्ष महोदय, छह महीने में यह संभव नहीं। सभी तकनीकी और आर्थिक पहलू जांचने होंगे। यह तीन बार लक्षवेधी आई है। पहले नाला चौड़ीकरण का सुझाव आया था, वह नहीं हुआ। उसके बाद IIT और महानगरपालिका ने तकनीकी सलाहकार नियुक्त किए, उन्होंने टनल का प्रस्ताव अभी दिया है।"},
-                    {time:272, speaker:"A", role:"अध्यक्ष", text:"सन्माननीय राज्यमंत्री महोदया ठीक से जवाब दे रही हैं। सदस्यों का आग्रह है — समयबद्ध कार्यक्रम दें। नया तकनीकी सलाहकार विभाग ने नियुक्त किया है, उसे थोड़ा समय चाहिए — नई तकनीक, नई टेक्नोलॉजी। लेकिन अधिवेशन समाप्त होते ही पहले सप्ताह में महानगरपालिका अधिकारी, विभाग प्रतिनिधि, नए तकनीकी सलाहकार — सबकी उच्चस्तरीय बैठक बुलाएंगे। इस बारिश में परेशानी न हो, इसकी उपाययोजना बैठक में की जाएगी।"},
-                    {time:330, speaker:"A", role:"अध्यक्ष", text:"रविवार को अधिवेशन समाप्त हो रहा है। राज्यमंत्री महोदया पहले ही सप्ताह में कन्सल्टेंट को बुलाएंगी। जॉइंट म्युनिसिपल कमिश्नर, म्युनिसिपल कमिश्नर को बुलाएंगे। दिलीप लांडे साहब को भी बुलाया जाएगा। आमदार महोदय आपको भी बुलाएंगे। यह समस्या आने वाली बारिश में नहीं रहेगी — तेज गति से उपाययोजनाओं का निर्णय बैठक में लिया जाएगा।"},
-                    {time:370, speaker:"E", role:"आमदार", text:"खार सबवे का भी प्रश्न है, अंधेरी सबवे का है, जोगेश्वरी का भी है। आप अंधेरी के बारे में सकारात्मक हैं, बैठक लेने वाले हैं — इसका अभिनंदन। साथ ही मंत्री महोदय से विनंती कि खार सबवे के संदर्भ में भी ऐसी ही बैठक अधिवेशन के बाद ली जाए।"},
-                    {time:393, speaker:"A", role:"अध्यक्ष", text:"मुंबई और मुंबई उपनगर का दायरा बहुत बड़ा है। मुर्जी पटेल साहब ने अपने विशिष्ट क्षेत्र का प्रश्न उठाया। अन्य सदस्यों को प्रश्न रखने हों तो नगर विकास मंत्री महोदय को अलग पत्र दें, पत्र देखकर कार्रवाई करेंगे। लक्षवेधी क्रमांक दो — अमीन पटेल साहब।"},
-                    {time:420, speaker:"B", text:"अध्यक्ष महोदय, लक्षवेधी क्रमांक 2। माननीय अध्यक्ष महोदय, वितरित किए अनुसार।"},
-                    {time:425, speaker:"F", role:"आमदार", text:"मैं आपके माध्यम से सरकार और मंत्री महोदय को कहना चाहता हूं कि मुंबई में, विशेषकर दक्षिण मुंबई में 100-150 साल पुरानी बिल्डिंगें हैं। सरकार का धन्यवाद — कमाठीपुरा रीडेवलपमेंट प्रक्रिया शुरू होकर टेंडर कॉल करके हजारों लोगों को घर देने का काम शुरू हो रहा है। क्लस्टर रीडेवलपमेंट का टेंडर कॉल हो गया, जल्द ही वर्क ऑर्डर जारी होगा।"},
-                    {time:500, speaker:"F", role:"आमदार", text:"लगभग 15-16 हजार पुरानी इमारतें हैं जिनमें लोग बहुत परेशानी से रहते हैं। माडा से एनओसी मिलने के बाद आयओडी मिलता है, बिल्डिंग डिमॉलिशन होता है। बहुत सारे डेवलपर बिल्डिंग तोड़कर चले जाते हैं — 5-5 साल, 10-10 साल भाड़ा नहीं देते। बिल्डिंग नहीं बनाते, भाड़ा भी नहीं देते। ऐसे डेवलपर पर कड़ी कार्रवाई होनी चाहिए। तीन साल का भाड़ा पहले जमा करने का प्रावधान होना चाहिए।"},
-                    {time:580, speaker:"F", role:"आमदार", text:"इन पुरानी बिल्डिंगों का 33-7, 33-9 के तहत रीडेवलपमेंट होता है। पॉलिसी 79-1A लाई थी, उस पर हाई कोर्ट ने स्थगिती दी है — सात महीने हो गए। सुप्रीम कोर्ट में तारीख पड़ रही है। अर्जेंट सुप्रीम कोर्ट में मेंशन करना चाहिए क्योंकि सैकड़ों बिल्डिंग C1 डिक्लेयर करके नोटिस दे दिए — बिल्डिंग खाली करो। लेकिन आज वो बिल्डिंग 79-A के तहत रुकी हुई हैं। सुप्रीम कोर्ट में अर्जेंट पिटिशन दाखिल करके कितने दिन में सुलझाएंगे?"},
-                    {time:660, speaker:"F", role:"आमदार", text:"एक बड़ा मुद्दा — एग्जीक्यूटिव इंजीनियर का ऑफिस कॉन्ट्रैक्टरों का अड्डा बन गया है। यह पत्र मैंने एकनाथ शिंदे जी को लिखा था और डीपीडीसी में उन्होंने आश्वासन दिया था। कॉन्ट्रैक्टर 120 प्रतिशत और 100..."}
-                ],
-                2: [
-                    {time:0, speaker:"A", role:"आमदार", text:"मैं माननीय मंत्री महोदय से विनंती करता हूं — इस लक्षवेधी के दो भाग हैं। पहला: वाशिम जिले की नदी-जोड़ परियोजना में भागीदारी और कौन से प्रकल्प हाथ में लिए गए। दूसरा: चाकातीर्थ प्रकल्प — राजमार्ग पुल के कारण पूरा नहीं हो सका। 2009 में शुरू, पुल अब 50% पूरा, इस गर्मी में मोटरेबल हो जाएगा। प्रकल्प पूरा होने पर मालेगांव शहर को पानी मिलेगा और जालुका, डावा, केवडा क्षेत्र के किसानों को सिंचाई का पानी मिलेगा।"},
-                    {time:45, speaker:"A", role:"आमदार", text:"तीसरा — हालांकि लक्षवेधी में उल्लेख नहीं है — मांग यह है कि बुलढाणा के पेंटाकली और कोराडी बांधों से हमारे जिले का हक का पानी इस साल भी छोड़ा जाए। चौथा और अंतिम: अधिवेशन समाप्त होने से पहले आपके कक्ष में बैठक आयोजित करेंगे क्या?"},
-                    {time:76, speaker:"B", role:"अध्यक्ष", text:"अध्यक्ष महोदय, सन्माननीय सदस्य। किसको बोलना है?"},
-                    {time:82, speaker:"C", role:"मंत्री", text:"उन्होंने यह प्रश्न पूछा है, उनके मतदार संघ के लिए अत्यंत महत्वपूर्ण प्रश्न है। जैसा कि आप जानते हैं, नलगंगा-वैनगंगा परियोजना — आपके तालुका का समावेश नहीं था। 20 अगस्त के जीआर से अब शामिल हो गया। पुल का काम जारी है, स्लैब बाकी — वह हो गया तो प्रकल्प आगे बढ़ेगा। PWD ने टेंडर निकाला, काम चालू है।"},
-                    {time:120, speaker:"A", role:"आमदार", text:"आपने 4-5 प्रश्न पूछे, बैठक लेनी है ना? फिर इतना समय क्यों लगेगा?"},
-                    {time:125, speaker:"C", role:"मंत्री", text:"मुंबई जाने के बाद तुरंत यह लेंगे। कल ही इस संदर्भ में बैठक बुलाता हूं, सभी अधिकारी यहीं हैं और उनके सभी प्रश्न हल कर देता हूं।"},
-                    {time:150, speaker:"B", role:"अध्यक्ष", text:"बोलो सावरकर साहब। बोलो।"},
-                    {time:163, speaker:"D", role:"आमदार", text:"एक घटना घटी अकोला में दो दिन पहले। मैं दो दिन सोच रहा था कि सभागृह में इसका उल्लेख करना चाहिए या नहीं। एक 13 साल की लड़की ने फांसी लगाकर आत्महत्या की। जानकारी लेने पर पता चला कि एक विशेष समुदाय का लड़का छह महीने से उसे परेशान कर रहा था। यह अचानक नहीं हुआ। लड़की के पिता ने सेंट एन्स स्कूल, गीतानगर में शिक्षकों, प्राचार्य को दो महीने पहले शिकायत दी थी कि यह लड़का मेरी बेटी को बार-बार परेशान करता है, ध्यान दें।"},
-                    {time:200, speaker:"D", role:"आमदार", text:"अंततः वह परेशानी असहनीय हो गई और उस 13 साल की लड़की ने फांसी लगाकर आत्महत्या कर ली। मेरी सरकार से विनंती: शालेय शिक्षा मंत्री इस सेंट एन्स स्कूल पर कार्रवाई करके मान्यता रद्द करें — यह एक भाग। और जिन शिक्षकों ने इस मामले की उपेक्षा की उन पर कार्रवाई हो — यह दूसरा भाग। पुलिस ने अपनी तरफ से काम किया, लड़के के पिता को गिरफ्तार किया। इस सभागृह के माध्यम से मैं कठोर कार्रवाई की अपेक्षा करता हूं।"},
-                    {time:230, speaker:"B", role:"अध्यक्ष", text:"शासन इसकी गंभीर नोट लेगा।"},
-                    {time:240, speaker:"E", text:"क्या है? हां यह क्या? एक मिनट बोलने दो। बस मुद्दा रखना है।"},
-                    {time:248, speaker:"E", role:"आमदार", text:"महाराष्ट्र लिफ्ट, एस्केलेटर और मूविंग वॉकवे अधिनियम 2017 में पास हुआ — आठ साल पहले। इसका कार्यान्वयन अभी भी लंबित..."},
-                    {time:260, speaker:"B", role:"अध्यक्ष", text:"बैठिए। पॉइंट ऑफ इन्फॉर्मेशन। लक्षवेधी चालू हैं। लक्षवेधी क्रमांक छह। अध्यक्ष महोदय, वितरित अनुसार।"},
-                    {time:279, speaker:"F", role:"विपक्ष", text:"अध्यक्ष महोदय, मैं सभागृह को बताना चाहता हूं कि लाडकी बहीण योजना का कोई विरोध नहीं। लेकिन कार्यान्वयन में — 14,998 पुरुषों ने महिलाओं के नाम पर मासिक 1,500 रुपये 10 महीने तक लिए। उन पर क्या कार्रवाई हुई? महिलाओं की योजना में पुरुषों ने कैसे डल्ला मारा? 14,998 पुरुषों के नाम किसने घुसाए और बिना पड़ताल के सरकार ने क्यों नहीं जांचा?"},
-                    {time:320, speaker:"F", role:"विपक्ष", text:"दूसरा — 8,000 बोगस लाभार्थी कौन हैं? तीसरा — कुल बोगस लाभार्थी 26 लाख, राशि ₹5,136 करोड़ 30 लाख। सरकार वसूली करेगी? जिलावार आंकड़े: पुणे 2,04,000 | ठाणे 1,35,300 | नाशिक 1,86,800 | अहिल्यानगर 1,25,756 | संभाजीनगर 1,04,700 | कोल्हापुर 1,14,000 | मुंबई उपनगर 1,13,000 | नागपुर 95,500 | रायगड 63,000 | बीड 71,000 | लातूर 59,000।"},
-                    {time:370, speaker:"F", role:"विपक्ष", text:"मेरी मांग यह है: लाडकी बहीण योजना में ₹5,136 करोड़ 30 लाख का आर्थिक घोटाला हुआ। जिन्होंने किया उन पर क्या कार्रवाई होगी? बोगस पंजीकरण के समय सरकारी अधिकारियों ने मंजूरी दी — उन पर क्या कार्रवाई? सरकार जांच करके ऑडिट करके श्वेत पत्र निकालकर महाराष्ट्र की जनता को जानकारी देगी क्या?"},
-                    {time:421, speaker:"G", role:"मंत्री", text:"अध्यक्ष महोदय, आपकी अनुमति से सभागृह को जानकारी देना चाहती हूं। कुल पंजीकरण फॉर्म लगभग 2 करोड़ 63 लाख 83 हजार 589 आए। इनमें से लगभग 2 करोड़ 43 लाख 82 हजार 936 विभाग ने स्वीकृत किए। 26 लाख का जो आंकड़ा आपने बताया — वह IT विभाग का क्रॉस वेरिफिकेशन डेटा था।"},
-                    {time:480, speaker:"G", role:"मंत्री", text:"जब कोई विभाग योजना लाता है तो दूसरे विभाग का डेटा उसके पास नहीं होता — मांगना पड़ता है। उदाहरण: लाडकी बहीण योजना महिला व बाल विकास विभाग चलाता है। नमो शेतकरी योजना का लाभार्थी डेटा कृषि विभाग के पास — वह जनवरी में मिला। दोनों योजनाओं के कुछ कॉमन लाभार्थी मिले।"},
-                    {time:530, speaker:"G", role:"मंत्री", text:"26 लाख डेटा का पूर्ण क्रॉस वेरिफिकेशन करने पर लगभग 4 लाख तक ही रिवाइज स्क्रूटनी की जरूरत थी — बाकी सब पात्र लाभार्थी थे। 8,000 जो बोगस कहा — वे सरकारी कर्मचारी थे, प्राथमिक स्वास्थ्य केंद्र आदि में — नियमानुसार अपात्र। सभी जिलाधिकारियों को पत्र लिखा, वसूली 5-6 महीने से चालू है।"},
-                    {time:600, speaker:"G", role:"मंत्री", text:"12-14 हजार पुरुषों के खाते का मामला — जब योजना शुरू हुई तो पता चला कि अनेक महिलाओं का खुद का व्यक्तिगत बैंक खाता नहीं। यह प्रक्रिया सभी जिलों में लगभग दो महीने में पूरी होगी।"}
-                ],
-                3: [
-                    {time:28, speaker:"A", role:"महालेखापरीक्षक", text:"नमस्कार."},
-                    {time:38, speaker:"B", role:"समिति अध्यक्ष", text:"सार्वजनिक उपक्रम समितीचा अहवाल क्रमांक ५, परिच्छेद क्रमांक ४ मधील परिच्छेद क्रमांक ४.२.१. या संदर्भात परिच्छेदाबाबत आपलं आक्षेपण मूळ अहवालामध्ये आलेलं आहे. त्यासंबंधाने उद्धव गुजर."},
-                    {time:54, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"आता आमची साक्ष घ्यावी. प्रत्यक्ष कामकाजाला सुरुवात करण्यापूर्वी समितीला आपला परिचय करून द्यावा अशी मी विनंती करतो."},
-                    {time:65, speaker:"D", role:"समिति सदस्य", text:"नमस्कार सर, मी डॉ. श्रीकांत, उद्योग विभागाचा सहसचिव आहे."},
-                    {time:65, speaker:"A", role:"महालेखापरीक्षक", text:"सेम नाही आहे डॉक्टर श्रीकांत, उद्योग विभागाचे सहसचिव आहेत — उद्योग विभाग."},
-                    {time:69, speaker:"A", role:"महालेखापरीक्षक", text:"डॉक्टर श्रीकांत कुलकर्णी सामील झाले आहेत."},
-                    {time:99, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सर नमस्कार, मी सी. वेलूराजू, मुख्य कार्यकारी अधिकारी, एम.आय.डी.सी."},
-                    {time:106, speaker:"A", role:"महालेखापरीक्षक", text:"मी अजित कुंभार, सहमुख्य कार्यकारी अधिकारी, महाराष्ट्र विद्युत."},
-                    {time:112, speaker:"B", role:"समिति अध्यक्ष", text:"सर नमस्कार, मी वर्षा ठाकूर बोलते आहे."},
-                    {time:116, speaker:"A", role:"महालेखापरीक्षक", text:"धन्यवाद, धन्यवाद."},
-                    {time:119, speaker:"B", role:"समिति अध्यक्ष", text:"सर, आधीच्या वेळी समितीवर चर्चा झाली होती, आपण एक पत्र दिलं होतं की ७ एप्रिलच्या —"},
-                    {time:130, speaker:"B", role:"समिति अध्यक्ष", text:"सात तारखेला एक पत्र दिलं होतं की आपण निवडणूक — निवडणुकीचं पत्र एक —"},
-                    {time:150, speaker:"B", role:"समिति अध्यक्ष", text:"पश्चिम बंगालच्या निवडणुकीसाठी ड्युटी असल्यामुळे —"},
-                    {time:160, speaker:"B", role:"समिति अध्यक्ष", text:"साक्ष नाकारली. समितीच्या सदस्यांचं तेव्हा असं मत होतं की निवडणुकीला न जाता निवडणुकीचं कारण देऊन समितीसमोर न येणं हे योग्य नाही. त्यामुळे त्या दिवशी आपल्याला पत्र दिलेली आहेत, तुम्हाला त्याचं काही उत्तर दिलेलं आहे. सर, हे पत्र काल सचिवांकडे मिळालं — कारवाईची प्रत — आणि तिथे माहिती लावून पूर्ण. हा विषय एवढाच आहे. वेगळा विषय नाही. तर समितीची क्विक —"},
-                    {time:190, speaker:"B", role:"समिति अध्यक्ष", text:"पूर्वकल्पना दिली होती आणि पश्चिम बंगालच्या निवडणुकीसाठी आम्ही नियुक्त असल्यावर — येते त्यावेळी सांगितलं — सदस्यांचं असं observation होतं की काही असं काही नाहीये आणि तिथे मुंबईत असताना समितीसमोर न येणं —"},
-                    {time:167, speaker:"A", role:"महालेखापरीक्षक", text:"कारण देऊन समितीसमोर न येणं ही योजना —"},
-                    {time:171, speaker:"A", role:"महालेखापरीक्षक", text:"आपल्याला विषयाचं पत्र दिलेलं आहे, तुम्हाला त्याची एक उत्पत्ती दिलेली आहे. सर, हे पत्र पत्र काल सचिवांकडे मिळालं."},
-                    {time:209, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"अध्यक्ष महोदय, ते सचिव आणि मी आणि आमच्याकडे तीन Joint CEO — सगळ्यांना वेगवेगळ्या राज्यांमध्ये निवडणूक कार्यक्रमासाठी आमचे आदेश आले होते."},
-                    {time:223, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"मी पण गेलो होतो, सचिव महोदय पण गेले होते. आणि त्यानंतर शासनाने आता पूर्ण — आता एम.आय.डी.सी.चे सगळे अधिकारी गेले आणि सचिव महोदयांचंही भरपूर काम आहे म्हणून शासनाकडे शिफारस पाठवण्यात आली होती. यांना सूट…"},
-                    {time:237, speaker:"B", role:"समिति अध्यक्ष", text:"आम्हाला माहीत आहे, सरित मला माहीत आहे — दिल्लीतून त्यांच्यानंतर exemption मला भेटलं होतं. पण त्या दिवशी आपण ज्या दिवशी बैठक होती, आपण exemption मिळालेलं होतं — सदस्यांचं समितीचं मत असं होतं की आपण मुंबईत होतो, तर किमान कुणीतरी फलक दिला पाहिजे, कुणीतरी परवानगी मागितली पाहिजे, कुणीतरी किमान — लोक या कारणामुळे म्हणजे की वस्तुनिष्ठ स्थिती असेल तर ते ठीक आहे, तुम्ही नाहीये तर ठीक आहे. तर तुम्ही पत्र देता की आम्ही इथे नाहीये — आणि त्या दिवशी मुंबईमध्ये असता."},
-                    {time:267, speaker:"B", role:"समिति अध्यक्ष", text:"हे समितीच्या निदर्शनास सदस्यांच्या आल्यामुळे हे योग्य नाही असं आपल्याला सांगितलं — तुम्हाला खुलासा द्यायला सांगितलं — तो काय खुलासा आहे — आपल्याला पत्र घेतलं —"},
-                    {time:276, speaker:"B", role:"समिति अध्यक्ष", text:"पुढच्या बैठकीत तरीसुद्धा — मी आपली चूक आहे — त्यांना पुरेसा वेळ दिला पाहिजे आणि जर आपण पुढच्या बैठकीचा विषय झाला आहे तर बैठकीतर मग ते सात दिवस झाली, सात दिवस आत मध्ये आपण पत्र द्यायला पाहिजे, कारण आता आपल्याला बेकार — तुमचा त्या हेतू मी सांगा काय?"},
-                    {time:281, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"पुरेसा वेळ दिला पाहिजे."},
-                    {time:289, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सत्य भाई"},
-                    {time:297, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"मला वाटतं असं की ते निवडणूक कार्यक्रमाचं पत्र — मला वाटतं सचिन माळ्यांनी दिलं असेल. त्यावेळी आमचे आदेश कायम होते. त्यानंतर शासनाचं पत्र गेलं — मला वाटतं एक तारखेला काहीतरी ते exemption process — आणि आपली meeting सात तारखेला होती. तर कदाचित नंतर ते आणि सगळ्या लोकांचा exemption process झाला नव्हता. आता ज्ञान शिवाय तर — आता यांनी निवडणूक कार्यक्रम करून परवा आलो. फक्त सचिन माझा exemption मला वाटतं एक तारखेला काहीतरी आम्हाला भेटलं. त्यानंतर हा आम्ही ते —"},
-                    {time:327, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"communicate करू शकलो असतो. ७ तारखेला आम्हाला आता exam date भेटला असेल. आपण बैठक घ्यावी अशी communicate करू शकलो असतो. पण काय करायला म्हणतात ते राहून गेलं."},
-                    {time:337, speaker:"B", role:"समिति अध्यक्ष", text:"मी सबित्रा कविले —"},
-                    {time:342, speaker:"B", role:"समिति अध्यक्ष", text:"म्हणजे प्रत्येक जण कमी आहे, बरोबर? सगळेच जण असेच आहेत, बरोबर? असं नाहीये."},
-                    {time:353, speaker:"B", role:"समिति अध्यक्ष", text:"गंभीर बाब आहे. आता पण एवढं सगळं आम्ही वेळ काढतो आहे. तुम्हाला ठीक आहे, आज आज actually सचिवांनी फोन केल्यानं परवानगी मागितली की ठीक आहे आम्हाला तर — आम्ही काय तुम्हाला कामात अडथळे आणण्यासाठी नाही — कामात मदत करण्यासाठी आहे. तुम्ही सुद्धा ती काळजी घेतली पाहिजे. आपल्याला एक सात दिवस आधी, सहा दिवस आधी कळवलं — आणि त्यानंतर जर उपस्थित राहायला सांगितलं. किमान वस्तुनिष्ठ तुम्ही पत्रावर करायला पाहिजे — वस्तुनिष्ठ कुणीतरी संपर्क करायला पाहिजे. आम्ही काय तुम्हाला —"},
-                    {time:383, speaker:"B", role:"समिति अध्यक्ष", text:"काम करायला problem करणार की नाही — इथे असा? समजा सगळ्यांचा बदला ते परत गुण आहे — त्याचं तुम्ही आम्हाला पुढच्या बैठकीत दाखवला असं द्या. तुम्हाला काय effect बोलायचा?"},
-                    {time:395, speaker:"D", role:"समिति सदस्य", text:"नाही, नाही, आता त्यांनी ते अडचणीनं केलं असेल."},
-                    {time:412, speaker:"B", role:"समिति अध्यक्ष", text:"हॅलो सर"},
-                    {time:417, speaker:"B", role:"समिति अध्यक्ष", text:"आजच्या आजच्या कार enjoy —"},
-                    {time:427, speaker:"A", role:"महालेखापरीक्षक", text:"सुप्रभात माननीय अध्यक्ष आणि सदस्य. आज माननीयांनी CAG च्या २०२३ चा अहवाल क्रमांक ५ मधील परिच्छेद ४.२.१ हाती घेतला आहे."},
-                    {time:442, speaker:"A", role:"महालेखापरीक्षक", text:"महाराष्ट्र औद्योगिक विकास महामंडळाच्या औद्योगिक विकासातील कामगिरी लेखापरीक्षणावर."},
-                    {time:449, speaker:"A", role:"महालेखापरीक्षक", text:"हा परिच्छेद निविदा धोरणाचं उल्लंघन करून केलेल्या वाटपावर आहे — म्हणजे e-bidding. यात तीन मुद्दे आहेत. एक —"},
-                    {time:461, speaker:"A", role:"महालेखापरीक्षक", text:"१० औद्योगिक क्षेत्रांमधील ६६ पक्षांना औद्योगिक भूखंडांचं वाटप — धोरणाचं उल्लंघन करून —"},
-                    {time:472, speaker:"A", role:"महालेखापरीक्षक", text:"तातडीच्या किंवा कारवाईच्या आधारावर. हे सर्व ६६ वाटप थेट नामनिर्देशनाच्या आधारावर देण्यात आले. आणि दुसरा मुद्दा —"},
-                    {time:487, speaker:"A", role:"महालेखापरीक्षक", text:"या ६६ प्रकरणांमध्ये भाडेपट्टा अधिमूल्य वसुलीसाठी दरांची चुकीची आकारणी. लागू केलेले दर निर्धारित दरांनुसार नव्हते — हा दुसरा मुद्दा. तिसरा मुद्दा — सामान्यतः औद्योगिक भूखंडाचा आकार किमान २०० चौ.फूट — २०० चौ.मीटर असायला हवा. या विशिष्ट प्रकरणात, वाटप केलेल्या ६६ भूखंडांपैकी ५३ भूखंड —"},
-                    {time:510, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"चौरस — पेक्षा कमी —"},
-                    {time:511, speaker:"A", role:"महालेखापरीक्षक", text:"प्रत्येकी १०० चौ.मीटरचे होते. हे तीन मोठे उल्लंघन आम्ही अहवालात नमूद केले आहेत."},
-                    {time:519, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"अहवाल"},
-                    {time:520, speaker:"A", role:"महालेखापरीक्षक", text:"आणि हेच आपण आज पाहणार, चर्चा करणार आहोत."},
-                    {time:527, speaker:"B", role:"समिति अध्यक्ष", text:"हीच त्याच प्रकारची समस्या आहे."},
-                    {time:538, speaker:"A", role:"महालेखापरीक्षक", text:"विभागाने आजपर्यंत कोणतंही explanatory memorandum दिलेलं नाही, म्हणून मी विनंती करेन की ते शक्य तितक्या लवकर स्पष्ट करावं."},
-                    {time:539, speaker:"D", role:"समिति सदस्य", text:"यांनी explanatory memorandum —"},
-                    {time:559, speaker:"A", role:"महालेखापरीक्षक", text:"आधी आणि आधीची काही पद्धत आहे का?"},
-                    {time:561, speaker:"B", role:"समिति अध्यक्ष", text:"First in first out, last in first out."},
-                    {time:566, speaker:"A", role:"महालेखापरीक्षक", text:"सध्याचं अंमलात असलेलं धोरण वेगवेगळ्या पद्धती सांगतं, सर. एक —"},
-                    {time:566, speaker:"B", role:"समिति अध्यक्ष", text:"सध्याचं अंमलात असलेलं धोरण सांगतं —"},
-                    {time:574, speaker:"A", role:"महालेखापरीक्षक", text:"ज्या औद्योगिक क्षेत्रात भूखंडयोग्य जमिनीच्या ८० टक्क्यांपेक्षा जास्त वाटप आधीच झालेलं आहे, तिथे औद्योगिक हेतूसाठी भूखंड e-bidding द्वारे वाटप करायचे. म्हणजे पुरेशी स्पर्धा आहे — त्यामुळे किमान उर्वरित २० टक्के भूखंडांसाठी तुम्ही e-bid ला जायला हवं. हीच त्यामागची भावना. आणि दुसरी कलम — उर्वरित औद्योगिक क्षेत्रांमध्ये non-bidding patients आमंत्रित करून थेट जमीन वाटप केलं जातं —"},
-                    {time:602, speaker:"A", role:"महालेखापरीक्षक", text:"जिथे वाटप ८० टक्क्यांपेक्षा कमी आहे. त्या प्रकरणांमध्ये तुम्ही थेट वाटपाला जाता. जिथे ८० टक्के आधीच गाठले आहेत, तिथे किमान उर्वरित २० टक्क्यांसाठी तुम्ही e-bid ला जाता. ही पहिली श्रेणी."},
-                    {time:615, speaker:"D", role:"समिति सदस्य", text:"फक्त विशिष्ट क्षेत्रासाठी की सर्व उद्योगांसाठी?"},
-                    {time:618, speaker:"A", role:"महालेखापरीक्षक", text:"सर्व उद्योग, सर्व उद्योग. सप्टेंबर २०१६ चं हे धोरण आहे."},
-                    {time:624, speaker:"A", role:"महालेखापरीक्षक", text:"पण विशेष प्राधान्य कलमांअंतर्गत थेट जमीन वाटप देखील परवानगीयोग्य आहे. प्राधान्य श्रेणी जसं की मेगा प्रकल्प, परदेशी थेट गुंतवणूक प्रकल्प, संरक्षण, PSU प्रकल्प. अशा प्रकरणांमध्ये थेट वाटप प्राधान्याच्या आधारावर करता येतं. ही तीन कलमं आहेत ज्याअंतर्गत तुम्ही करू शकता. तुम्हाला करावंच लागेल. तर या विशिष्ट प्रकरणात आम्ही जे लक्षात आणून दिलं आहे — आता वाटप झालेली ही ६६ कलमं —"},
-                    {time:631, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"धन्यवाद"},
-                    {time:635, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"products, defense, PSU products."},
-                    {time:648, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"संदेश"},
-                    {time:655, speaker:"A", role:"महालेखापरीक्षक", text:"आणि तो पहिला मुद्दा. आणि दुसरा मुद्दा म्हणजे आकार. साधारणपणे औद्योगिक भूखंडाचा आकार किमान २०० चौ.मीटर असायला हवा. या प्रकरणात, आम्ही पाहिलं की वाटप केलेल्या ६६ भूखंडांपैकी ५३ भूखंड १०० चौ.मीटरचे होते."},
-                    {time:671, speaker:"A", role:"महालेखापरीक्षक", text:"आणि नंतर पुरवलेला भाडेपट्टा अधिमूल्य दर देखील विश्वासार्ह पद्धतीनुसार नाही."},
-                    {time:677, speaker:"A", role:"महालेखापरीक्षक", text:"माननीयांच्या —"},
-                    {time:683, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"एम.आय.डी.सी. म्हणजे —"},
-                    {time:691, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सर, नमस्कार. या विषयामध्ये एम.आय.डी.सी.मध्ये वेगवेगळं धोरण आहे. हे धोरण बनवतं एम.आय.डी.सी.चं Board. तो अधिकार आहे एम.आय.डी.सी.च्या कायद्याखाली — एम.आय.डी.सी.चं सगळं policy Board बनवतं. Broad guidelines असतात."},
-                    {time:711, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"पण असं पण करतो — बऱ्याच वेळा local मागणीनुसार, local लोकांच्या आवश्यकतेनुसार त्यामध्ये deviation पण असतो."},
-                    {time:720, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"आता हे CAG ने सांगितलं — कुठल्या park मध्ये ८०% plot विकत गेलेला आहे, त्यामध्ये ८०% पर्यंत आपण सरळ पद्धतीने वाटत होतो. त्यामध्ये आपण auction वगैरे bidding वगैरे करतो. ८०% संपल्यानंतर उर्वरित २०% plot साठी हे carbon — policy board ने बनवली होती त्यावेळी."},
-                    {time:740, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"ते auction पद्धतीने bidding करून ते वाटप करायचे. हे एक धोरण आहे. पण त्यानंतर हा आता हिंगणा हिंगणा हिंगणा मध्ये आता small and medium scale industry साठी तो लहान लहान plot असतो — तर शंभर शंभर square meter च्या त्याच्या —"},
-                    {time:761, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"जवळच्या जो auction bidding केला होता त्या rate च्या comparison मध्ये करून allot करण्यासाठी निर्णय आहे. आता त्यामध्ये ते administration स्तरावर आला नाही — परत board कडे जाऊन board च्या मंजुरी घेऊन हे वाटप करण्यात आलेलं आहे. म्हणजे जी policy बनवली ते board कडे परत — आता परत local मागणी असतो, बऱ्याच लोकांच्या मागणी असतो आणि industry मध्ये जर अशी एकदम कडक hard and fast नसतो — तर मागणीप्रमाणे —"},
-                    {time:791, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"आपण flexible असतो — कारण महाराष्ट्रामध्ये आपलं competition गुजरात, आंध्र, तामिळनाडू सगळीकडे आहे. आणि एम.आय.डी.सी.च्या मूळ उद्दिष्ट कायद्यामध्ये सुद्धा मूळ उद्दिष्ट असं आहे —"},
-                    {time:804, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"या महाराष्ट्रामध्ये उद्योजकता वाढवण्यासाठी जो जो काम करायचा — हे सगळं काम करायला Board ला अधिकार पण आहे."},
-                    {time:815, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सर, आता हे आमच्या महाराष्ट्र औद्योगिक विकास अधिनियम १९६१ या कायद्यामध्ये सर, वेगवेगळी sections आहेत. त्यामध्ये एम.आय.डी.सी. Board ला भरपूर अधिकार दिलेले आहेत."},
-                    {time:832, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"आणि policy बनवायला पण अधिकार दिलेले आहेत. त्या व्यतिरिक्त काय काय काम करायचं असेल — विकल्प काम करायला पण अधिकार दिलेले आहेत. त्यामध्ये सर, १४ मध्ये सर, एक —"},
-                    {time:847, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सामान्य महाराष्ट्र राज्याच्या अवधीसाठी त्वरित आणि पद्धतशीर स्थापना करण्याचे, त्यांच्या वाढ करण्याचे तसेच त्यांच्या विकास करण्याचे प्रोत्साहन देणे व त्यांच्या संबंधात मदत करणे हा Board चा अधिकार आहे आणि कामही आहे."},
-                    {time:856, speaker:"A", role:"महालेखापरीक्षक", text:"नंतर —"},
-                    {time:862, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"तसंच १५ A मध्ये — मला म्हणून जे योग्य वाटेल — ११ शर्तींवर त्यांनी धारण केलेल्या कोणत्याही मालमत्ता पद्धतीने देणे —"},
-                    {time:874, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"आणि तिची विक्री करणे, अदलाबदल करणे किंवा इतर प्रकारचे तिचे हस्तांतरण करणे — हा पण Board चा अधिकार आहे आणि कामही आहे. त्यापुढे —"},
-                    {time:886, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"१५ K. आपलं कामकाज योग्य रीतीने पार पाडण्यात आणि त्याच्या आधी नियमाच्या प्रयोजन अंमलात आणण्यात त्यासाठी आवश्यक किंवा इष्ट वाटेल अशा इतर गोष्टींवर काम करणे. So broadly म्हणजे सर —"},
-                    {time:906, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"policy आपण बनवतो considering general trend. ती policy असते. पण अशा घटना घडतात — आता पण मी पण बघतो भरपूर माल अशा असतो — ते existing policy मध्ये बसत नाही. त्या case मध्ये आम्ही सगळा प्रस्ताव परत ते policy बनवणाऱ्या Board च्या समोर सादर करतो. त्यामध्ये Board मध्ये वेगवेगळे सदस्य असतात. ती चर्चा होऊन त्यामध्ये जो निर्णय होतो तो निर्णय आम्ही अंमल करतो — आजसुद्धा करतो."},
-                    {time:933, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"त्या पद्धतीने त्यावेळी त्यांनी जिमनेच्या तो त्या जवळच्या जो —"},
-                    {time:939, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"Auction झाला होता त्या rate च्या आणि १०% वाढून त्यांनी आणि ते उद्योगांच्या — म्हणजे लहान लहान उद्योग या सगळ्या consider करून त्यांनी त्यावेळी वाटप केलेलं. मला वाटतं असं ते कायद्याच्या provision प्रमाणे आहे. धन्यवाद."},
-                    {time:955, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"तर यामध्ये तुम्ही दिलाय — पण यामध्ये आपण जो परा काढला आहे — यामध्ये कोणत्या कायद्याने, कोणत्या section ने तुम्हाला हे अधिकार दिले?"},
-                    {time:964, speaker:"B", role:"समिति अध्यक्ष", text:"एकटा काय उत्पाद होतोय तुम्ही भक्त बघता. मला student जे असं घडलं ना असं झालं. पण जो मूळ अक्षर आहे की हे अनियमित — तो बेकायदेशीर झाला तर त्या संदर्भात जे निमित्त आहे ते कायदेशीर आहे. हे आम्हाला आम्हाला बोलवेल असं — कोणत्याही त्यामध्ये एम.आय.डी.सी. Act किंवा याच्यामधलं कोणत्याही तुम्ही उल्लेख केलेला तुम्ही काय सांगितलं की हे plot मागितला, हा दिला, हा बैठकीत आला, हा झाला — इतपर्यंत तुम्ही त्यात उल्लेख केला."},
-                    {time:994, speaker:"B", role:"समिति अध्यक्ष", text:"परंतु जो CAG चा आक्षेप आहे की ही जी प्रक्रिया झाली ती अनियमित झाली. उदाहरणार्थ म्हणजे २०० चौ.मीटर पेक्षा कमी plot देऊन नाही — तुम्ही १०० मीटरचे plot देऊन — याच्यावर आक्षेप केले. तर १०० मीटरचे plot देताना कोणत्या धोरणाने, कोणत्या नियमाने आणि कोणत्या अधिकाराने ते दिले — हे त्यात नाही उद्धृत होत. तुम्ही जे practical कारण सांगता की ते आम्ही नाकारत नाही. परंतु practical कारण ज्या वेळी एखादा आपल्याला असतो — ते ते शेवटी कायद्यात नियमात साकरीत नसो होणार. हा आपला कामं असतो."},
-                    {time:1024, speaker:"B", role:"समिति अध्यक्ष", text:"जरी आवश्यक असेल तर आपण काही नाही बदलतो, धोरण नाही बदलतो — काही हरकत नाही बदलतो. परंतु या सगळ्या याच्या ज्या वेळी audit झाला, त्याच्यात जे आपण कार्य केलं — त्याचं स्पष्टीकरण हे समाधानकारक नाही."},
-                    {time:965, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"काय काय काय"},
-                    {time:967, speaker:"A", role:"महालेखापरीक्षक", text:"असंच घडलं आणि असंच झालं —"},
-                    {time:1040, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सर, base —"},
-                    {time:1042, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"मी सांप्रदायिकपणे मानतो सर. हा उत्तर देताना त्यांनी CAG ने एक policy — general policy च्या आधारावर हा मुद्दा काढलेला आहे. तो बरोबर आहे. तर policy च्या व्यतिरिक्त policy तो नंतर येतो. आधी कायदा, नंतर bylaws — woods — त्यानंतर त्या power वापरून policy बनवतो. Policy च्या तळाशी — म्हणजे जो spirit असेल ते कायद्याचं — कुठलं मूळ उद्दिष्ट असतो ते कायद्यामध्ये असतो. कायद्यामध्ये बोन —"},
-                    {time:1072, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सगळा power दिलेला आहे — not only in MIDC — आपण कुठली local स्वराज्य संस्था घेतली, तिकडे standing committee असतो, general body असतो. सगळा कायद्यामध्ये नाही — तर त्यामध्ये discussion करून निर्णय घेतला — ते power संबंधित लोकांना दिलेला आहे. पण हे कुठल्या उत्तरामध्ये ते कुठल्या कायद्यात — कुठल्या अधिकारात — हा निर्णय घेतला गेलेला आहे ते उल्लेख नाही — ते मान्य."},
-                    {time:1095, speaker:"B", role:"समिति अध्यक्ष", text:"समर्थनाचा एकूणच मूळ दास्त आहे की त्या मुद्द्यावर तुम्ही जात नाही. म्हणजे स्पष्टीकरणावर तुम्ही काय करता? उदाहरणार्थ तुम्ही पाच वेळा आपल्या समितीचा प्रमुख होतो — तर आम्हाला Beverage Committee ला आम्हाला अधिकार होते आणि Beverage Committee ने जो निर्णय घेतला तो रद्द करायला असेल तर आपल्या निर्णयात जावं लागत. बरोबर आहे? हे झाला नियम, कायदा आणि policy. सगळं झालं. तसंच यामध्ये तुम्ही जे मान्य केलं ते बरं झालं की —"},
-                    {time:1125, speaker:"B", role:"समिति अध्यक्ष", text:"तर आम्हाला specific सगळ्या मुद्द्यांचा अधिकार असेल काय नाकारायचा — कारण फक्त हे जे CAG मध्ये आली की हे अधिकार नसताना केला. तुमचं तर explanation असं आहे की त्या अधिकार आम्हाला होते."},
-                    {time:1137, speaker:"B", role:"समिति अध्यक्ष", text:"कोणत्या नियमाने होते? कोणत्या section प्रमाणे होते? कोणत्या धोरणाप्रमाणे होते? हे यात पुढे आधार दिले. बरोबर. तुमचं नाव आहे का की हे आम्ही — तुम्ही sure आहे की जर हे आम्ही नियमाने केलं तर मग आम्हाला परा जो निघालाय तो आपल्या समितीला अनुकूल आहे. तो आप delete करायचा. यांचा तरी काम करायचा. त्यांचा तरी काम करायचा."},
-                    {time:1143, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"आधार details बरोबर"},
-                    {time:1155, speaker:"A", role:"महालेखापरीक्षक", text:"याचा काय उपयोग?"},
-                    {time:1160, speaker:"A", role:"महालेखापरीक्षक", text:"Practical software"},
-                    {time:1167, speaker:"A", role:"महालेखापरीक्षक", text:"हं, धोरणामागच्या भावनेबद्दल — मी त्याच्या practicality शी सहमत आहे आणि अशा गोष्टी. इथला मुद्दा हा आहे की — जेव्हा एखादं विशिष्ट धोरण अंमलात असतं, तेव्हा mid-course मनमानी वाटप करू नका. हाच मुद्दा आम्ही पाहत आहोत. तुम्हाला करायचं असेल तर — तुम्ही धोरण घोषित केलंय, ते कागदावर ठेवलं आहे, सगळ्यांना त्याबद्दल माहीत आहे. Transparency हा प्रश्न आहे इथे."},
-                    {time:1197, speaker:"A", role:"महालेखापरीक्षक", text:"जेव्हा एखादं धोरण currency मध्ये असतं आणि तुम्ही ते उल्लंघन करता — म्हणजे धोरण बदलल्याशिवाय. हाच प्रश्न आहे. सर, तुम्हाला धोरणाचं उल्लंघन करून वाटप करायचं असेल तर परत Board कडे जा. परत Board कडे जा, धोरण बदला, परत घोषित करा — हे हे धोरण असेल — आणि अर्ज मागवा, मग तुम्ही वाटप करा. एखादं विशिष्ट धोरण currency मध्ये असताना ते करू नका."},
-                    {time:1205, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सर, तुम्हाला वाटप करायचं असेल —"},
-                    {time:1213, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"परत"},
-                    {time:1223, speaker:"A", role:"महालेखापरीक्षक", text:"प्रत्येक सेवा प्रत्येक यशासाठी असावी."},
-                    {time:1223, speaker:"B", role:"समिति अध्यक्ष", text:"आवडतं"},
-                    {time:1226, speaker:"B", role:"समिति अध्यक्ष", text:"त्यांचं समान मत आहे —"},
-                    {time:1228, speaker:"B", role:"समिति अध्यक्ष", text:"अरे आमच्या सगळ्यांचं मत आहे —"},
-                    {time:1230, speaker:"B", role:"समिति अध्यक्ष", text:"तुम्हीच policy करता? तुम्हीच violate करता? मग policy का करता?"},
-                    {time:1233, speaker:"A", role:"महालेखापरीक्षक", text:"आणि प्रत्येक वेळी policy बदलणार किंवा बदल —"},
-                    {time:1235, speaker:"B", role:"समिति अध्यक्ष", text:"Policy आता एक मागच्या वेळी आम्ही समितीने आता एक MSEDCL चा विषय आहे —"},
-                    {time:1241, speaker:"B", role:"समिति अध्यक्ष", text:"तुम्ही disconnection करा — rules सगळ्यांना सारखेच आहेत. आम्ही suggest काय केलं होतं की तुम्ही government च्या buildings आणि agriculture चं तुम्ही disconnection करताच नाहीये. पण record वर दिसतं की हे थकलेलं असताना bill असताना तुम्ही disconnection करत नाही. दुसऱ्या बाजूला industry चं करताय, बाकी सगळ्या गोष्टींचं करताय."},
-                    {time:1261, speaker:"B", role:"समिति अध्यक्ष", text:"तुम्ही policy मध्येच बदल करा असं आम्ही suggest केलं होतं MSEDCL ला — की agriculture आणि ते government कडे जाऊन करा. MSEDCL तुम्ही government ची building चं थकलेलं आहे — तो पण ग्राहक आहे. बरोबर? ते disconnection आपण करत नाही. आपण शेतकऱ्याचं करत नाही — दोन्ही थकलेले आहेत."},
-                    {time:1278, speaker:"B", role:"समिति अध्यक्ष", text:"आणि दुसऱ्या वेळेला तुम्ही industry चं थकलेलं disconnection करताय. हे discrimination होत आहे. आणि तो policies तुम्ही बदला असं आम्ही suggest केलं."},
-                    {time:1286, speaker:"B", role:"समिति अध्यक्ष", text:"तर तुम्ही आम्हाला हे करा की इथं सुद्धा की जर तुम्ही पॉलिसी बनवता तर ते मग इम्प्लिमेंट का करत नाही आणि तुमचं मत आता असं आहे की आम्ही केलेलं बरोबर आहे नाहीतर कोणत्या नियमानं — एवढंच आम्हाला सांगा. पण ते तुमचं explanation आता एम.आय.डी.सी. सारख्यांचं इतक्या meeting नंतर —"},
-                    {time:1301, speaker:"B", role:"समिति अध्यक्ष", text:"जे दिलंय ते समाधान करत नाही. आणि तुम्ही ते मान्य केलं की त्यामध्ये कोणत्या नियमाने, कोणत्या कलमाने, कोणत्या section ने हे आपण meaning exemption दिलंय — हे त्यात पुढे होत नाही — सगळ्या पूर्ण आपल्या report मध्ये. तर त्यामध्ये तुम्ही काय परत आम्हाला देणार — काय आजही तुम्ही थांबा. एक तर आम्हाला action करा की आम्ही केलेलं बरोबर आहे आणि आम्ही तुम्हाला next meeting submit करू — काय problem?"},
-                    {time:1325, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"अध्यक्ष महोदय —"},
-                    {time:1327, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"तर, आता तो CAG चा मुद्दा आहे — मी आधी सांगितल्याप्रमाणे — हे संपूर्णच Board च्या अधिकारामध्ये आहे, अधिकार क्षेत्रामध्ये आहे — त्याप्रमाणे केलेला आहे."},
-                    {time:1339, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"कुठल्या case मध्ये industry मध्ये आपण policy बनवतो. मी आधी सांगितल्याप्रमाणे order of precedence मध्ये third आणि fourth position मध्ये येतो. कायदा हे, spirit हे, sections हे, त्यानंतर bylaws rules हे, त्यानंतर parts. आता policy बनवली कोणी? ते पण Board बनवतो. अशी policy कधी बनवता येणार नाही."},
-                    {time:1358, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"आम्ही practical world मध्ये राहतो — आम्हाला practically महाराष्ट्रामध्ये industry वाढ करायची. That is our job. ठीक आहे, आता करताना १००% cases cover होईल अशी कुठल्या party कोणाला करता येत नाही. म्हणून त्या power Board ला ठेवलेला. त्या पद्धतीने cabinet meeting पण होतात — cabinet ला सुद्धा आपण individual case मध्ये निर्णय घेतो, sub-committee मध्ये निर्णय होतो. कारण general policy सर्व cases cover करू शकत नाही."},
-                    {time:1384, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"म्हणून वारंवार आपण जो policy बनवली त्यांच्याकडे जातो. It is all deviations म्हणून जातो. त्यान deviation च्या violation च्या फरक. आता हे use the word violation but it is not violation. ते Board ने बनवलेल्या policy पासून deviation आहे. आता Board ने policy बनवली त्यामध्ये Board ने सांगितलं २०० मीटर आहे. २०० मीटर काय? दगडामध्ये लिहिलेले शब्द नाहीये. आता locally लोकांना पाहिजे — त्यानं ३०-४० लोकांना पाहिजे — १००-१०० मीटर."},
-                    {time:1414, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"मध्ये त्यांना तिकडे काहीतरी उभं करायचं — आणि ते नागपूरमध्ये आहे, backward area मध्ये Board ला वाटलं २०० मीटर पैकी इथे संपवायला हरकत नाही. सगळा विचार करून निर्णय घेतला सर. It is totally in consonance with the act and there is a power. मी हा मानतो अध्यक्ष महोदय — हा जो power चा विषय आहे, ते आमच्या उत्तरामध्ये कुठे आला नाही. ते आम्ही re-submit करतो. धन्यवाद."},
-                    {time:1438, speaker:"D", role:"समिति सदस्य", text:"धन्यवाद."},
-                    {time:1442, speaker:"D", role:"समिति सदस्य", text:"तुमचा उद्देश चांगला आहे, तुम्ही very practical आहात — हे काहीच वादच नाही. जे academy highlight केलेला आहे — see you are after a lot of problems."},
-                    {time:1451, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"बरोबर"},
-                    {time:1452, speaker:"D", role:"समिति सदस्य", text:"जर तुम्ही act ने lower असला, तुम्ही दुसऱ्या कशाने lower असला — ते very discretionary आहे — चला आपण वाद घालू नका. पण audit आवश्यक आहे, checks and balances आवश्यक आहेत — ही committee आणि CAG त्यासाठीच आहे."},
-                    {time:1465, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"बरोबर"},
-                    {time:1465, speaker:"D", role:"समिति सदस्य", text:"तर एक statement केलं की ठीक आहे आमच्याकडे powers आहेत — आणि आम्हाला सगळ्यांना कळतं ते. CAG ने highlight केलं आहे ते एक very limited issue. तुमच्याकडे policy होती, तुम्ही certain plots certain sizes मध्ये distribute करण्याचा निर्णय घेतला."},
-                    {time:1482, speaker:"D", role:"समिति सदस्य", text:"तुम्ही practical organization आहात, तुम्हाला हे घेऊन जायचं आहे. बरोबर. तुम्ही committee कडे किंवा Board कडे परत गेला का? हो. आकार कमी करण्यासाठी, lease policy बदलण्यासाठी, तुम्ही Board कडे परत गेला आणि Board ने मंजुरी दिली. हो. आणि ते उत्तर द्या."},
-                    {time:1485, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"बरोबर"},
-                    {time:1496, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"चार."},
-                    {time:1498, speaker:"B", role:"समिति अध्यक्ष", text:"आणि असं प्रत्येक ठिकाणी division — development काय आहे? हे Board ला powers आहेत. यामुळे जे काही कोणत्या rules प्रमाणे, कोणत्या act प्रमाणे जे काय काय म्हणतात —"},
-                    {time:1501, speaker:"D", role:"समिति सदस्य", text:"Division"},
-                    {time:1512, speaker:"D", role:"समिति सदस्य", text:"ते sub-divide करेल. So basically when you divide it to a factor —"},
-                    {time:1512, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"ते sublimate करेल."},
-                    {time:1516, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"आम्ही Board कडे परत गेलो — आणि Board मध्ये सगळ्या members च्या process मध्ये discussion — म्हणून case-specific discussion झाला, decision झाला — ते आम्हाला बजावून झालं. हे सगळं आमचं Board discussion."},
-                    {time:1522, speaker:"D", role:"समिति सदस्य", text:"आता आमची सगळी झाली. यापैकी सगळी. यापैकी सगळी bold आहेत. हो."},
-                    {time:1528, speaker:"A", role:"महालेखापरीक्षक", text:"हो, हो."},
-                    {time:1529, speaker:"D", role:"समिति सदस्य", text:"तर तेच आपण सांगितलेलं आहे की it is not contrary to the law. Board has decided to give some exemption. बरोबर. ते आमच्या उत्तरापर्यंत आला नाही. नाही, नाही — bring it on record. बरोबर."},
-                    {time:1538, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"बरोबर"},
-                    {time:1539, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"तो आमच्या उत्तरामध्ये alert —"},
-                    {time:1544, speaker:"A", role:"महालेखापरीक्षक", text:"ओके, समितीने specified केलंय."},
-                    {time:1545, speaker:"D", role:"समिति सदस्य", text:"तसं आहे का?"},
-                    {time:1545, speaker:"A", role:"महालेखापरीक्षक", text:"Discrimination power एम.आय.डी.सी. Board कडे आहे. तुम्ही requirement मध्ये त्याचा उल्लेख करायला हवा."},
-                    {time:1549, speaker:"D", role:"समिति सदस्य", text:"Board"},
-                    {time:1551, speaker:"D", role:"समिति सदस्य", text:"माझा CAG ला प्रश्न आहे — Board ने घेतलेले निर्णय CAG audit साठी applicable आहेत का?"},
-                    {time:1561, speaker:"A", role:"महालेखापरीक्षक", text:"सर, या प्रश्नासाठी खूप खूप धन्यवाद, सर. इथला मुद्दा आम्ही reports मध्ये देखील आधीच विस्तृत केला आहे."},
-                    {time:1569, speaker:"A", role:"महालेखापरीक्षक", text:"स्पष्टीकरण —"},
-                    {time:1570, speaker:"D", role:"समिति सदस्य", text:"विशेषतः —"},
-                    {time:1572, speaker:"A", role:"महालेखापरीक्षक", text:"विशिष्ट प्रकरणं अशी आहेत जिथे भारताच्या सर्वोच्च न्यायालय आणि मुंबई उच्च न्यायालयांनी स्पष्ट केलं आहे की कोणतंही राज्य — कोणतंही statutory authority — जसं की MIDC तसंच Board — सार्वजनिक मालमत्तेच्या विसर्जनामध्ये — अशा प्रकारचं उल्लंघन करू शकत नाही. त्यांनी ते उल्लंघन म्हणूनच ठरवलं आहे. अशा सर्व प्रकरणांमध्ये. म्हणूनच आम्ही याबाबत खूप specific आहोत — Board ने ते अतिशय मनमानीपणे हाताळू नये. हा मुद्दा."},
-                    {time:1602, speaker:"A", role:"महालेखापरीक्षक", text:"पुढच्या वेळी, तपशीलासह सांगा."},
-                    {time:1601, speaker:"D", role:"समिति सदस्य", text:"हाच मुद्दा आहे जो आम्ही — पुढच्या वेळी — कारण तो खूपच जवळ आहे — कधीच न मिटणाऱ्या प्रश्नांसह — हे committed सर्वांना सामान्य आहे — ते pleas घेऊ शकत नाहीत की माझं Board all powerful आहे — नाही. ते court ने कधीच नाकारलेलं नाही — कधीच मान्य केलेलं नाही. नाही, मी म्हणतोय — मी मुद्दा सांगतोय. मी पण म्हणतोय की right आहे — त्याचा हा प्रकार आहे. मग हा माझा act —"},
-                    {time:1631, speaker:"D", role:"समिति सदस्य", text:"निर्णय. त्यापलीकडे आम्हाला कळेल. असंच वाटतं. तर तुम्ही पण आता Board चा निर्णय स्पष्ट करा. तुम्ही ते लिहा त्यात. कारण —"},
-                    {time:1612, speaker:"A", role:"महालेखापरीक्षक", text:"सर्व commissioned entities ला हे common आहे. ते plea घेऊ शकत नाहीत की माझं Board all for आहे — नाही. Court ने कधीच त्याला defeat केलं नाही — कधीच मान्य केलं नाही. नाही, मी म्हणतोय —"},
-                    {time:1624, speaker:"A", role:"महालेखापरीक्षक", text:"मी एक मुद्दा सांगतोय —"},
-                    {time:1639, speaker:"A", role:"महालेखापरीक्षक", text:"Record वर —"},
-                    {time:1643, speaker:"A", role:"महालेखापरीक्षक", text:"सिविल कोर्टांच्या उदाहरणांसह — म्हणजे सर्व नियमबाह्य ठरवून —"},
-                    {time:1646, speaker:"D", role:"समिति सदस्य", text:"सर्व हे काढून टाकून —"},
-                    {time:1649, speaker:"B", role:"समिति अध्यक्ष", text:"नमस्ते"},
-                    {time:1650, speaker:"A", role:"महालेखापरीक्षक", text:"Board अशी भूमिका घेऊ शकत नाही की मी all powerful आहे — मी काहीही करू शकतो."},
-                    {time:1655, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"मी करू शकतो — पण ते असं नाही असेल की त्यांच्याकडे discrimination power आहे. ते MIDC च्या betterment साठी काहीही बदलू शकतात."},
-                    {time:1658, speaker:"A", role:"महालेखापरीक्षक", text:"ते MIDC च्या betterment साठी काहीही बदलू शकतात."},
-                    {time:1664, speaker:"B", role:"समिति अध्यक्ष", text:"MIDC च्या — आणि आता आम्ही ते सुरू करू. मला वाटतं त्यांनी explanation submit करावं. आलेल्या explanation ची पडताळणी करा. किती दिवसात देणार सांगा. त्यानंतर आम्ही दुसरी meeting घेऊ."},
-                    {time:1674, speaker:"A", role:"महालेखापरीक्षक", text:"हा"},
-                    {time:1683, speaker:"B", role:"समिति अध्यक्ष", text:"खोकला"},
-                    {time:1686, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"यावर हल्ला नका करू —"},
-                    {time:1688, speaker:"B", role:"समिति अध्यक्ष", text:"एका आठवड्यात काय — आधीच सगळं study केलं. एक तर incorporate करायचं — सगळेच अधिकारी — एवढाच एक मुद्दा आहे incorporate करायचा. थोडा साहेब बघा यामध्ये काय आहे — एकच मुद्दा आहे. Overall सगळ्यांचा आहे."},
-                    {time:1700, speaker:"B", role:"समिति अध्यक्ष", text:"शेवटी काय आहे की आम्हाला Board ला सगळे rules बनवायचे — पण ते practically just वाटायचे — just violate करायचे."},
-                    {time:1708, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"नाही, variety, deviation करा, deviation करा."},
-                    {time:1708, speaker:"B", role:"समिति अध्यक्ष", text:"Deviation करा, Deviation करा. Particle. मग ते work. तर तसं पाहिलं ना — rules ची गरजच नाही."},
-                    {time:1714, speaker:"D", role:"समिति सदस्य", text:"तर तसं पाहिलं ना — rules ची गरजच नाही. Let us have our — Let us have our viewer — हो."},
-                    {time:1718, speaker:"B", role:"समिति अध्यक्ष", text:"सात"},
-                    {time:1723, speaker:"B", role:"समिति अध्यक्ष", text:"मग तसं कसं आहे की तो गावातला एखादा दुकानदार नसतो होता —"},
-                    {time:1729, speaker:"B", role:"समिति अध्यक्ष", text:"भाजी बाजारात बसल्यात — आम्हाला आज ₹१० रुपयाला विकायची, म्हणजे ₹१२ रुपयाला विकायची, ₹१४ रुपयाला विकायची. असंच MIDC च्या policy करायला पाहिजे. जर तुम्हाला debit करायचा आणि करायचा सगळ्याचा rules करायचा, policy करायचा, act करायचा आणि ते debit करायचा — तर मग MIDC rules च का? जो येईल त्याला देऊन टाका, ज्याला वाटायला तसं देऊन टाका."},
-                    {time:1745, speaker:"A", role:"महालेखापरीक्षक", text:"जो ill करत होता त्याला वाटलं तसं देऊन दे."},
-                    {time:1751, speaker:"B", role:"समिति अध्यक्ष", text:"बोला ना? हे ठीक आहे ना? आता असं होतं की आम्ही काही करू शकतो. मग त्याची आवश्यकता नाही. आपण एक असं तुम्ही ते submit करा ना."},
-                    {time:1760, speaker:"A", role:"महालेखापरीक्षक", text:"Submit करा."},
-                    {time:1763, speaker:"D", role:"समिति सदस्य", text:"In the difference of interest — and that\\'s okay."},
-                    {time:1765, speaker:"A", role:"महालेखापरीक्षक", text:"पान क्रमांक ९, EC report मध्ये, page number ९ indication, आम्ही court cases ruling तीन दिलेली आहेत. Ruling — असे deviation बरेच ज्यांनी आधी —"},
-                    {time:1774, speaker:"A", role:"महालेखापरीक्षक", text:"मी पाहतो —"},
-                    {time:1776, speaker:"A", role:"महालेखापरीक्षक", text:"General CAG Board"},
-                    {time:1776, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"मी सांगू का —"},
-                    {time:1777, speaker:"A", role:"महालेखापरीक्षक", text:"माफ करा —"},
-                    {time:1779, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सर, आम्ही cases pick करून retrospectively all cases ला fit करू शकत नाही. Judgments असू शकतात — पण आम्हाला case च्या basic facts कडे परत जायला हवं. म्हणजे इतकं म्हणणं आहे — Board, group of individuals आहे — जे विशिष्ट purposes साठी एकत्र आणलेले आहेत — ज्यांना individual म्हणून single म्हणून घेता येत नाही. आणि Board ला act अंतर्गत certain specific manner मध्ये function discharge करण्याचा अधिकार आहे. हे सर्व act मध्ये coded आहे. आणि Board त्या act च्या confluence च्या आत आहे."},
-                    {time:1809, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"तर Board त्यांचं कामकाज करतो — आणि it is not like the traditional sector — industry वाढवण्यासाठी काय state मध्ये १०० कोटी मध्ये जमीन घेतात, zero rupay मध्ये वाटप करतात. जर ते शक्य नसेल तर तुम्ही हा yardstick adopt केला तर —"},
-                    {time:1824, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"बरोबर? तर तुम्ही blindly म्हणू शकत नाही — hypotenuse means supreme — आणि सगळं set of facts आणि इतर गोष्टींसह येतं. So we will submit our writing in writing सर."},
-                    {time:1834, speaker:"B", role:"समिति अध्यक्ष", text:"Public interest साठी जे कराल त्यात आमचा आक्षेप नाही. परंतु तुम्ही individual basis मध्ये करताय — आणि दुसरा एक submit करा. यामध्ये जे Boards तुम्ही allot केले — यातील —"},
-                    {time:1839, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"बरोबर?"},
-                    {time:1848, speaker:"B", role:"समिति अध्यक्ष", text:"एंडुलेट"},
-                    {time:1851, speaker:"D", role:"समिति सदस्य", text:"अरे job generation वगैरे जो काय उद्देश आहे —"},
-                    {time:1853, speaker:"B", role:"समिति अध्यक्ष", text:"सहगुरू उद्देश"},
-                    {time:1856, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"तो photo full print झाला का? हे काय आपण काय हे करायला समजेल. ते recent पण काय झालं ते पण आम्ही देऊ. माझा video तर दोन आठवते तर."},
-                    {time:1864, speaker:"A", role:"महालेखापरीक्षक", text:"दोन तास"},
-                    {time:1868, speaker:"A", role:"महालेखापरीक्षक", text:"हो, मला फक्त संपवू द्या. हे बघा, मी तुम्ही जे म्हणत आहात त्यावर contest करणार नाही. ही check and balance system आहे आणि CAG. का नाही? नाही, नाही सर. मी म्हणतोय — तो वेगळ्या perspective मध्ये घेतोय. मी म्हणतोय operation MIDC मागची भावना. मी ते घेत नाही."},
-                    {time:1875, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"This is a chicken —"},
-                    {time:1877, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"का नाही?"},
-                    {time:1885, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"Operation MIDC —"},
-                    {time:1888, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"तो असाच आहे. So तुम्हाला त्याला माहीत नव्हतं. मला माहीत नाही. मला खात्री नाही. मला आवडतं. मी तुम्हाला explain करायला आवडेल."},
-                    {time:1889, speaker:"A", role:"महालेखापरीक्षक", text:"मला माहीत नाही, मी नाही — मी तुम्हाला spirit explain करायचा प्रयत्न केला. मला ४ वर्षांसाठी थोडी समस्या होती, त्यामुळे त्याकडे लक्ष देऊ नका."},
-                    {time:1895, speaker:"D", role:"समिति सदस्य", text:"माझ्या Poha मध्ये थोडी समस्या होती, त्यामुळे त्यानुसार जाऊ नका."},
-                    {time:1902, speaker:"A", role:"महालेखापरीक्षक", text:"आता spirit म्हणजे — spirit म्हणजे — आखलेल्या policies चं properly पालन झालं आहे की नाही ते पाहायचं. ते audit चं काम आहे. आम्हाला इथे तेच करायचं आहे. आणि Board all powerful आहे ही भूमिका घेणं acceptable नाही — कारण अशी अनेक प्रकरणं आहेत जिथे Boards वर court ने कडक कारवाई केली आहे, त्यांचे निर्णय illegal ठरवले आहेत. म्हणून आपण त्या limit मध्ये जायला नको. हीच त्यामागची भावना. म्हणून जेव्हा तुम्ही —"},
-                    {time:1932, speaker:"A", role:"महालेखापरीक्षक", text:"deviation घेता, तेव्हा Board कडे परत जा, policy बदला, घोषित करा, transparent करा — जेणेकरून इतरांनाही संधी मिळेल — मग तुम्ही ठीक आहात. हीच पूर्ण कल्पना आहे."},
-                    {time:1918, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"कारवाई केली आहे —"},
-                    {time:1942, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"तो Board कडे जात आहे. नाही नाही, आम्ही Board कडे गेलो आहोत. साहेबांचं म्हणणं आहे — go back to the Board and create a new policy. माझं म्हणणं आहे — we have gone back to the Board and we have taken case by case deviations approval. So that is a minor difference. पण जर आम्ही प्रत्येक case साठी policy करत राहिलो — तर शेवटी आम्ही शेकडो policies करत बसू आणि it has — आम्हाला कोणताही अर्थ राहणार नाही. अध्यक्ष महोदय, आपण सांगितल्याप्रमाणे — काय काय केलं, काही परिस्थिती केली आणि महाकाचे प्रश्न साजले."},
-                    {time:1972, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"मोदींनी विचारलं — आता ते alert केलं ते बरं आहे — पण आता त्याची परिस्थिती काय आहे सगळं माहीत आहे. गोळा करून १५ दिवसात सादर करतो — आणि requisite CAG — after going through that — then we can continue — that this three weeks."},
-                    {time:1944, speaker:"A", role:"महालेखापरीक्षक", text:"We have gone —"},
-                    {time:1945, speaker:"A", role:"महालेखापरीक्षक", text:"साहेब का बनवायचं आहे —"},
-                    {time:1987, speaker:"D", role:"समिति सदस्य", text:"तेच एकमेव आहे, सर."},
-                    {time:1989, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"हे फक्त paramedics select केलेलं आहे —"},
-                    {time:1990, speaker:"B", role:"समिति अध्यक्ष", text:"Payment"},
-                    {time:1992, speaker:"B", role:"समिति अध्यक्ष", text:"मला वाटतं ६१ plots चा issue आहे — ६६ ६६ ६६ plots चा issue — India चे आहेत — त्यामुळे ६६ चा बॉस —"},
-                    {time:1996, speaker:"D", role:"समिति सदस्य", text:"फोटो"},
-                    {time:1998, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"हे short solution तपशीलात आहे."},
-                    {time:2005, speaker:"B", role:"समिति अध्यक्ष", text:"अजून घ्यायचाय पुढचा? नाही नाही. आता आपण ६६ plots असल्यापुढे —"},
-                    {time:2005, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"हॅलो Nature"},
-                    {time:2007, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सहा"},
-                    {time:2011, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"Tickets collect"},
-                    {time:2012, speaker:"B", role:"समिति अध्यक्ष", text:"६६ companies आहेत —"},
-                    {time:2021, speaker:"B", role:"समिति अध्यक्ष", text:"१५ दिवसांपर्यंत — तीन दिवसांपर्यंत आपण आणि सर ते explanation द्या. मागचं जे ७ तारखेचं सगळं जरूर आहे."},
-                    {time:2022, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"सेम"},
-                    {time:2024, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"१५"},
-                    {time:2025, speaker:"D", role:"समिति सदस्य", text:"स्पर्गेल प्रसाद"},
-                    {time:2030, speaker:"D", role:"समिति सदस्य", text:"सात तारखेपर्यंत आम्ही सगळं देऊ. आम्ही MIDC कल्याण २२ आणि २३ ला भेट देत आहोत. २२ आणि २३."},
-                    {time:2039, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"२७"},
-                    {time:2041, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"आम्ही commit करू."},
-                    {time:2042, speaker:"D", role:"समिति सदस्य", text:"नक्कीच"},
-                    {time:2045, speaker:"D", role:"समिति सदस्य", text:"ठाणे जिल्ह्यात फक्त कल्याण MIDC बघण्यासारखी आहे."},
-                    {time:2052, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"कल्याण आहे, कल्याण डोंबिवली आहे आणि TTC area मध्ये आहे map."},
-                    {time:2056, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"मापई मापई दास. पण ठाणे ठाणे पप्पालू. मला वाटतं महत्त्वाचं म्हणजे कल्याणी डोंबिवली, अंबरनाथ आणि TDC."},
-                    {time:2065, speaker:"D", role:"समिति सदस्य", text:"MIDC च्या आधारावर — त्या संदर्भात तुम्ही clear industrial approvals पण असायला हवेत."},
-                    {time:2070, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"MIDC च्या बाहेर आम्ही देत नाही, सर. आम्ही देत नाही."},
-                    {time:2073, speaker:"D", role:"समिति सदस्य", text:"India"},
-                    {time:2078, speaker:"C", role:"मुख्य कार्यकारी अधिकारी, एमआयडीसी", text:"ओके. धन्यवाद."},
-                    {time:2093, speaker:"B", role:"समिति अध्यक्ष", text:"आधी इकडे असं बनलं असं वाटतं. तुम्ही उरी lo असली असे बसले ना — दिसत नाही तिकडून."},
-                    {time:2094, speaker:"A", role:"महालेखापरीक्षक", text:"आपली नाव शिरोध परणामा."},
-                    {time:2124, speaker:"A", role:"महालेखापरीक्षक", text:"संपत्ती"},
-                    {time:2123, speaker:"D", role:"समिति सदस्य", text:"संपत्ती करे"}
-                ],
-                4: [
-                    {time:0, speaker:"A", text:"नमस्कार। कितना समय है? 10 तक कितना समय है देखो।"},
-                    {time:29, speaker:"A", role:"समिति अध्यक्ष", text:"नमस्कार, कार्यक्रम शुरू करने से पहले विभागीय प्रतिनिधि और समिति अपना परिचय दें।"},
-                    {time:35, speaker:"C", role:"सहसचिव", text:"मैं रामचंद्र धनावडे, सहसचिव, वैद्यकीय शिक्षण विभाग। हमारे सचिव पश्चिम बंगाल चुनाव ड्यूटी पर हैं।"},
-                    {time:49, speaker:"D", role:"प्रबंध संचालक, हाफकिन", text:"नमस्कार सर, मैं प्रबंध संचालक, हाफकिन जैव-औषधी निगम।"},
-                    {time:72, speaker:"E", role:"महालेखापरीक्षक", text:"आज का परिच्छेद: हाफकिन जैव-औषधी निगम ने आयकर अधिनियम 1961 की धारा 139(1) के तहत निर्धारित तिथि पर आयकर रिटर्न दाखिल नहीं किया। परिच्छेद 3.2: आयकर नियमों का अनुपालन न करना।"},
-                    {time:147, speaker:"D", role:"प्रबंध संचालक, हाफकिन", text:"2008-09 में कंपनी को ₹30.57 करोड़ का नुकसान था। 30 सितंबर 2009 तक रिटर्न दाखिल नहीं हुआ। देरी से ₹43 लाख स्रोत कर वापसी और ₹1.15 करोड़ जुर्माना — कुल ₹1.59 करोड़ हानि।"},
-                    {time:264, speaker:"D", role:"प्रबंध संचालक, हाफकिन", text:"शंकरवार सभी नोटिस लेने से इनकार कर रहे हैं। कंपनी रिकॉर्ड से अपना ईमेल हटा दिया, कर्मचारियों को बोला कोई नोटिस न लें। 5-6 पतों पर भेजी — सब वापस आई। अंत में दरवाजे पर चिपका दी।"},
-                    {time:300, speaker:"B", role:"समिति अध्यक्ष", text:"14-15 साल से लंबित है! सोमवार से कार्रवाई शुरू करो। सामान्य तरीके से न हो तो संपत्ति जब्त करो। इतने साल क्यों इंतजार किया?"},
-                    {time:535, speaker:"G", role:"महालेखापरीक्षक", text:"परिच्छेद 8 भी है — कर्मचारियों ने कंपनी के खर्च पर उच्च न्यायालय में व्यक्तिगत याचिकाएं दायर कीं। और ₹50.69 करोड़ का पोलियो टीका खरीद नुकसान। सब विवरण एक महीने में दें।"}
-                ]
-            },
-            insights: {
-                1: [
-                    {cat:"cat-infra", border:"border-blue", catLabel:"बुनियादी ढांचा", title:"अंधेरी सबवे — 50 साल पुरानी जलभराव समस्या", body:"विधायक मुर्जी पटेल ने तीसरी बार जलभराव मुद्दा उठाया। बारिश में ~30% क्षेत्र डूबता है। IIT मुंबई ने 981 मीटर बंद सुरंग का प्रस्ताव दिया।", tags:["अंधेरी पूर्व-पश्चिम","3 बार उठाया","IIT सुरंग प्रस्ताव"]},
-                    {cat:"cat-social", border:"border-amber", catLabel:"शहरी विकास", title:"दक्षिण मुंबई पुरानी इमारतों का पुनर्विकास", body:"15,000-16,000 इमारतें 100-150 साल पुरानी हैं। कमाठीपुरा क्लस्टर पुनर्विकास टेंडर निकला। डेवलपर 5-10 साल तक किराया नहीं देते।", tags:["15,000+ इमारतें","DCPR 33-7, 33-9"]},
-                    {cat:"cat-legal", border:"border-rose", catLabel:"कानूनी", title:"नीति 79-1A पर हाई कोर्ट की रोक", body:"बॉम्बे हाई कोर्ट ने नीति 79-1A पर 6 महीने की रोक लगाई। C1 (खतरनाक) इमारतों को खाली करने को कहा लेकिन पुनर्विकास रुका। सुप्रीम कोर्ट में चुनौती की मांग।", tags:["हाई कोर्ट रोक","6 महीने लंबित"]},
-                    {cat:"cat-governance", border:"border-teal", catLabel:"कार्रवाई", title:"सत्रोपरांत बैठक का वचन", body:"अध्यक्ष ने मंत्री को BMC अधिकारियों, IIT सलाहकारों और विधायकों के साथ बैठक बुलाने का निर्देश दिया।", tags:["बैठक पुष्ट","मानसून-पूर्व समयसीमा"]}
-                ],
-                2: [
-                    {cat:"cat-legal", border:"border-rose", catLabel:"वित्तीय अनियमितता", title:"लाडकी बहीण योजना — ₹5,136 करोड़ विसंगति", body:"विपक्ष का आरोप 26 लाख फर्जी लाभार्थियों को ₹5,136.30 करोड़ मिले। 14,998 पुरुष लाभार्थी महिला योजना में। पुणे (2.04L) और नाशिक (1.87L) सबसे अधिक।", tags:["₹5,136 करोड़","26L फर्जी","ऑडिट मांग"]},
-                    {cat:"cat-welfare", border:"border-violet", catLabel:"सरकारी जवाब", title:"क्रॉस-वेरिफिकेशन: केवल ~4L मामलों में जांच", body:"मंत्री: 26L में से केवल ~4L की पुनर्जांच आवश्यक। 8,000 सरकारी कर्मचारी (वसूली जारी)। 12-14K पुरुषों के खाते — महिलाओं का खुद का खाता नहीं था।", tags:["2.63 करोड़ आवेदन","वसूली जारी"]},
-                    {cat:"cat-governance", border:"border-teal", catLabel:"सिंचाई", title:"वाशिम नदी-जोड़ और चाकातीर्थ बांध", body:"20 अगस्त GR से वाशिम नलगंगा-वैनगंगा में शामिल। चाकातीर्थ बांध पुल 50% पूरा (2009 से)। पेंटाकली/कोराडी बांध से पानी छोड़ने की मांग।", tags:["नदी जोड़","50% पूर्ण","2009 से"]},
-                    {cat:"cat-social", border:"border-amber", catLabel:"गंभीर घटना", title:"अकोला — 13 वर्षीय बालिका की आत्महत्या", body:"6 महीने के उत्पीड़न के बाद 13 वर्षीय बालिका की आत्महत्या। पिता ने सेंट एन स्कूल में 2 महीने पहले शिकायत की — कोई कार्रवाई नहीं। मांग: मान्यता रद्द, शिक्षकों पर कार्रवाई।", tags:["सेंट एन स्कूल","गिरफ्तारी"]},
-                    {cat:"cat-governance", border:"border-emerald", catLabel:"कार्रवाई", title:"प्रतिबद्ध अनुवर्ती कार्रवाई", body:"1. मंत्री अगले दिन वाशिम अधिकारियों से मिलेंगे। 2. अकोला घटना का गंभीर संज्ञान। 3. अपात्र लाभार्थियों से 2 महीने में वसूली। 4. श्वेतपत्र की मांग।", tags:["4 कार्रवाई बिंदु"]}
-                ],
-                3: [
-                    {cat:"cat-legal", border:"border-rose", catLabel:"नीति उल्लंघन", title:"66 भूखंड बिना ई-बिडिंग आवंटित", body:"CAG ने 10 MIDC क्षेत्रों में 66 भूखंडों का सीधा आवंटन चिह्नित किया। सितंबर 2016 की नीति 80%+ क्षेत्रों में ई-बिडिंग अनिवार्य करती है।", tags:["66 भूखंड","सीधा नामांकन","नीति उल्लंघन"]},
-                    {cat:"cat-infra", border:"border-blue", catLabel:"आकार उल्लंघन", title:"53 भूखंड 100 वर्ग मीटर — न्यूनतम से कम", body:"MIDC नीति 200 वर्ग मीटर न्यूनतम आकार निर्धारित करती है। 66 में से 53 भूखंड 100 वर्ग मीटर के थे। MIDC ने पिछड़े क्षेत्रों में लघु उद्योगों की मांग का हवाला दिया।", tags:["100 बनाम 200 वर्ग मीटर","53 छोटे भूखंड"]},
-                    {cat:"cat-finance", border:"border-emerald", catLabel:"वित्तीय", title:"अनियमित लीज प्रीमियम दरें", body:"66 आवंटनों में निर्धारित दरों का पालन नहीं हुआ। MIDC ने पास की नीलामी दरों में 10% वृद्धि का उपयोग किया।", tags:["लीज प्रीमियम","दर विचलन"]},
-                    {cat:"cat-governance", border:"border-teal", catLabel:"कानूनी बचाव", title:"MIDC ने 1961 अधिनियम के बोर्ड अधिकारों का हवाला दिया", body:"MIDC CEO ने धारा 14 और 15A/15K का हवाला देकर बोर्ड के विवेकाधिकार का बचाव किया। समिति ने कहा यह लिखित स्पष्टीकरण में नहीं था।", tags:["MIDC अधिनियम 1961","धारा 14, 15A, 15K"]},
-                    {cat:"cat-governance", border:"border-violet", catLabel:"कार्रवाई", title:"15 दिन में विस्तृत स्पष्टीकरण की समयसीमा", body:"समिति ने MIDC को 15 दिन में सभी 66 आवंटनों का कानूनी आधार, बोर्ड प्रस्ताव और मामलेवार औचित्य देने का निर्देश दिया।", tags:["15 दिन की सीमा","सुप्रीम कोर्ट उदाहरण"]}
-                ],
-                4: [
-                    {cat:"cat-legal", border:"border-rose", catLabel:"कर अनुपालन विफलता", title:"हाफकिन — ₹1.59 करोड़ विलंबित आयकर से हानि", body:"हाफकिन ने मूल्यांकन वर्ष 2009-10 का आयकर रिटर्न समय पर दाखिल नहीं किया। 4 साल देरी से अक्टूबर 2013 में दाखिल। ₹43 लाख स्रोत कर वापसी और ₹1.15 करोड़ जुर्माना — कुल ₹1.59 करोड़ हानि।", tags:["₹1.59 करोड़","मूल्यांकन वर्ष 2009-10"]},
-                    {cat:"cat-finance", border:"border-emerald", catLabel:"खरीद हानि", title:"₹50.69 करोड़ पोलियो टीका खरीद में हानि", body:"सर्वोच्च न्यायालय निर्देशों और केंद्रीय सतर्कता आयोग दिशानिर्देशों का पालन न करने से ₹50.69 करोड़ व्यापार हानि। अनियमित टेंडर प्रदान।", tags:["₹50.69 करोड़","पोलियो टीका"]},
-                    {cat:"cat-governance", border:"border-teal", catLabel:"जवाबदेही", title:"3 अधिकारी चिह्नित — 1 नोटिस से भाग रहा", body:"तीन जिम्मेदार अधिकारी। दो को नोटिस दी गई। शंकरवार नोटिस स्वीकारने से इनकार — सभी पतों से वापस।", tags:["3 अधिकारी","नोटिस बचाव"]},
-                    {cat:"cat-governance", border:"border-violet", catLabel:"कार्रवाई", title:"एक महीने में आपराधिक कार्यवाही का निर्देश", body:"समिति ने एक महीने में कानूनी समीक्षा पूर्ण कर आपराधिक मामला दर्ज करने, सेवानिवृत्ति लाभ/पेंशन से वसूली करने का निर्देश दिया।", tags:["1 महीना","आपराधिक मामला","पेंशन वसूली"]}
-                ]
-            }
-        },
         mr: {
-            rec1Title: "पायाभूत सुविधा व शहरी गृहनिर्माण",
-            rec2Title: "कल्याणकारी योजना व शासन",
             rec3Title: "एमआयडीसी भूखंड वाटप — महालेखापरीक्षक ऑडिट समीक्षा",
             rec4Title: "हाफकिन बायो-फार्मा व फिल्म सिटी — कॅग लेखापरीक्षण आढावा",
-            d1Topic: "पायाभूत सुविधा, शहरी विकास, गृहनिर्माण",
-            d2Topic: "कल्याण योजना गैरव्यवहार, सिंचन, सामाजिक प्रश्न",
             d3Topic: "एमआयडीसी भूखंड वाटप, महालेखापरीक्षक ऑडिट, औद्योगिक धोरण",
-            d1Issue: "अंधेरी सबवे पाणी साचणे, जुन्या इमारतींचा पुनर्विकास",
-            d2Issue: "लाडकी बहीण योजना अनियमितता, अकोला प्रकरण",
             d3Issue: "66 भूखंडे टेंडर धोरणाच्या उल्लंघनात; 100 चौ.मी. चे अनुचित भूखंडे",
             d4Topic: "आयकर अनुपालन अपयश, पोलिओ खरेदी नुकसान, कर्मचारी गैरवर्तन",
             d4Issue: "₹1.59 कोटी कर नुकसान; ₹50.69 कोटी पोलिओ खरेदी नुकसान",
             d4Summary: "हाफकिन जैव-औषधी महामंडळाने आर्थिक वर्ष 2009-10 चा आयकर विवरणपत्र वेळेवर सादर केले नाही, ज्यामुळे ₹1.59 कोटींचे नुकसान झाले. तीन अधिकारी जबाबदार — एक (सुभाष शंकरवार) नोटीस स्वीकारण्यास नकार देत आहे. पोलिओ लस खरेदीत केंद्रीय दक्षता आयोग मार्गदर्शक तत्त्वांचे उल्लंघन करून ₹50.69 कोटींचे नुकसान. समितीने एक महिन्यात फौजदारी कार्यवाही सुरू करण्याचा निर्देश दिला.",
-            summary: "महाराष्ट्र विधानसभेच्या या सत्रात पायाभूत सुविधा, कल्याण आणि शासनाच्या महत्त्वाच्या विषयांवर चर्चा झाली. सत्र 1 मध्ये 50 वर्षांपासूनच्या अंधेरी सबवे पाणी साचण्याच्या समस्येवर (IIT मुंबईने 981 मीटर बोगद्याचा प्रस्ताव दिला) आणि दक्षिण मुंबईतील 15,000+ शतकी इमारतींच्या पुनर्विकासावर चर्चा झाली, जो धोरण 79-1A वरील उच्च न्यायालयाच्या स्थगितीमुळे रखडला आहे. सत्र 2 मध्ये लाडकी बहीण योजनेतील कथित ₹5,136 कोटींच्या गैरव्यवहारावर (26 लाख बोगस लाभार्थी), वाशिम जिल्ह्यातील नदीजोड प्रकल्पांवर आणि अकोल्यातील 13 वर्षीय मुलीच्या आत्महत्येवर तीव्र चर्चा झाली.",
-            d1Summary: "आमदार मुर्जी पटेल यांनी अंधेरी सबवे पाणी साचण्याचा प्रश्न तिसऱ्यांदा उपस्थित केला. मंत्र्यांनी गांभीर्य मान्य केले आणि IIT मुंबईने 981 मीटर बंदिस्त बोगद्याचा प्रस्ताव दिल्याचे सांगितले. अध्यक्षांनी अधिवेशनानंतर BMC अधिकारी व सल्लागारांसोबत बैठकीचे आश्वासन दिले. वेगळ्या चर्चेत DCPR 33-7/33-9 अंतर्गत दक्षिण मुंबईतील 15,000+ जुन्या इमारतींच्या पुनर्विकासावर बोलणे झाले, जिथे धोरण 79-1A वर मुंबई उच्च न्यायालयाची 6 महिन्यांची स्थगिती आहे.",
-            d2Summary: "सत्रात चार प्रमुख विषयांवर चर्चा झाली: (1) नलगंगा-वैनगंगा नदीजोड प्रकल्पात वाशिमचा समावेश व चाकातीर्थ धरण प्रगती, (2) अकोल्यात छळवणूक व शाळेच्या दुर्लक्षामुळे 13 वर्षीय मुलीची आत्महत्या, (3) लिफ्ट/एस्केलेटर कायदा 2017 ची प्रलंबित अंमलबजावणी, आणि (4) 26 लाख संशयित लाभार्थ्यांसह लाडकी बहीण योजना अनियमिततेवर सविस्तर चर्चा. मंत्र्यांनी स्पष्ट केले की केवळ ~4 लाख प्रकरणांची तपासणी आवश्यक.",
+            summary: "या दोन ध्वनिमुद्रणांमध्ये दोन CAG लेखापरीक्षण समिती सुनावण्यांचा समावेश आहे. पहिली सुनावणी — एमआयडीसीने हिंगणा (नागपूर) मध्ये 66 औद्योगिक भूखंडांचे ई-बिडिंग धोरणाचे उल्लंघन करून वाटप केल्याची तपासणी. दुसरी सुनावणी — हाफकिन जैव-औषधी महामंडळाचा ₹1.59 कोटी आयकर अनुपालन अपयश, ₹50.69 कोटी पोलिओ लस खरेदी नुकसान, आणि महाराष्ट्र फिल्म सिटीचा ₹2.33 कोटी अनियमित सफाई कंत्राट टेंडर.",
             d3Summary: "या महालेखापरीक्षक ऑडिट समिती सुनावणीत एमआयडीसीने 10 औद्योगिक क्षेत्रांत केलेल्या 66 भूखंडांच्या वाटपाची तपासणी झाली. तीन प्रमुख उल्लंघने: (1) 80%+ भूखंडे वाटप झालेल्या क्षेत्रांत अनिवार्य ई-बिडिंगऐवजी थेट नामनिर्देशन, (2) किमान 200 चौ.मी. ऐवजी 100 चौ.मी. चे भूखंडे, (3) अनियमित भाडेपट्टी दर. एमआयडीसी मुख्य कार्यकारी अधिकाऱ्यांनी एमआयडीसी कायदा 1961 अंतर्गत मंडळाच्या अधिकारांचा दाखला दिला. समितीने 15 दिवसांत सविस्तर स्पष्टीकरण मागितले.",
             transcripts: {
                 1: [
@@ -3012,33 +2531,21 @@ function speakerClass(key) {
 function renderAll() {
     const t = T();
     // Home texts
-    document.getElementById('rec1Title').textContent = t.rec1Title;
-    document.getElementById('rec2Title').textContent = t.rec2Title;
     document.getElementById('rec3Title').textContent = t.rec3Title;
     document.getElementById('rec4Title').textContent = t.rec4Title;
     document.getElementById('summaryText').textContent = t.summary;
 
     // Detail texts
-    document.getElementById('detail1Title').textContent = t.rec1Title;
-    document.getElementById('detail2Title').textContent = t.rec2Title;
     document.getElementById('detail3Title').textContent = t.rec3Title;
     document.getElementById('detail4Title').textContent = t.rec4Title;
-    document.getElementById('d1Topic').textContent = t.d1Topic;
-    document.getElementById('d2Topic').textContent = t.d2Topic;
-    document.getElementById('d1Issue').textContent = t.d1Issue;
-    document.getElementById('d2Issue').textContent = t.d2Issue;
     document.getElementById('d3Topic').textContent = t.d3Topic;
     document.getElementById('d3Issue').textContent = t.d3Issue;
     document.getElementById('d4Topic').textContent = t.d4Topic;
     document.getElementById('d4Issue').textContent = t.d4Issue;
-    document.getElementById('d1Summary').textContent = t.d1Summary;
-    document.getElementById('d2Summary').textContent = t.d2Summary;
     document.getElementById('d3Summary').textContent = t.d3Summary;
     document.getElementById('d4Summary').textContent = t.d4Summary;
 
     // Transcripts
-    renderTranscript('transcript1', t.transcripts[1], 1);
-    renderTranscript('transcript2', t.transcripts[2], 2);
     renderTranscript('transcript3', t.transcripts[3], 3);
     renderTranscript('transcript4', t.transcripts[4], 4);
     // Refined transcripts with garbled review
@@ -3063,13 +2570,11 @@ function renderAll() {
     });
 
     // Insights
-    renderInsights('insights1', t.insights[1]);
-    renderInsights('insights2', t.insights[2]);
     renderInsights('insights3', t.insights[3]);
     renderInsights('insights4', t.insights[4]);
 
-    // Overall insights = merge both
-    const all = [...t.insights[1].map(i => ({...i, source: t.rec1Title})), ...t.insights[2].map(i => ({...i, source: t.rec2Title})), ...t.insights[3].map(i => ({...i, source: t.rec3Title})), ...t.insights[4].map(i => ({...i, source: t.rec4Title}))];
+    // Overall insights
+    var all = [...t.insights[3].map(function(i) { return Object.assign({}, i, {source: t.rec3Title}); }), ...t.insights[4].map(function(i) { return Object.assign({}, i, {source: t.rec4Title}); })];
     renderOverallInsights(all);
     document.getElementById('overallInsightCount').textContent = all.length + ' insights';
 }
@@ -3321,9 +2826,10 @@ function fmt(s) {
     return String(m).padStart(2, '0') + ':' + String(sec).padStart(2, '0');
 }
 
-['audio1','audio2','audio3','audio4'].forEach((id, i) => {
+['audio3','audio4'].forEach((id) => {
     const audio = document.getElementById(id);
-    const n = i + 1;
+    if (!audio) return;
+    const n = parseInt(id.replace('audio',''));
     audio.addEventListener('loadedmetadata', () => {
         document.getElementById('duration' + n).textContent = fmt(audio.duration);
     });
