@@ -919,10 +919,8 @@ function renderAll() {
     document.getElementById('d1Summary').textContent = t.d1Summary;
     document.getElementById('d2Summary').textContent = t.d2Summary;
 
-    // Transcripts
+    // Transcripts (refined only)
     [1, 2].forEach(function(n) {
-        if (t.transcripts[n]) renderTranscript('transcript' + n, t.transcripts[n], n);
-        // Refined transcripts with garbled review
         var container = document.getElementById('transcript' + n + 'r');
         var strip = document.getElementById('review-strip-' + n);
         var countEl = document.getElementById('review-count-' + n);
@@ -1215,7 +1213,7 @@ function fmt(s) {
         document.getElementById('fill' + n).style.width = pct + '%';
         document.getElementById('current' + n).textContent = fmt(audio.currentTime);
         // Highlight + auto-scroll for both raw and refined transcripts
-        ['transcript' + n, 'transcript' + n + 'r'].forEach(function(cid) {
+        ['transcript' + n + 'r'].forEach(function(cid) {
             const container = document.getElementById(cid);
             if (!container) return;
             const entries = container.querySelectorAll('.t-entry');
