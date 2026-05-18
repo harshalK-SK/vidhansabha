@@ -527,11 +527,11 @@
         </div>
         <div class="meta-field">
             <div class="meta-label">Total Duration</div>
-            <div class="meta-value">~10 minutes</div>
+            <div class="meta-value">~21 minutes</div>
         </div>
         <div class="meta-field">
             <div class="meta-label">Speakers Identified</div>
-            <div class="meta-value">5 speakers</div>
+            <div class="meta-value">10 speakers</div>
         </div>
         <div class="meta-field">
             <div class="meta-label">Language</div>
@@ -619,7 +619,7 @@
             <button class="speed-btn" onclick="setSpeed('audio1',1.5,this)">1.5x</button>
             <button class="speed-btn" onclick="setSpeed('audio1',2,this)">2x</button>
         </div>
-        <audio id="audio1" src="" preload="metadata"></audio>
+        <audio id="audio1" src="lakshvedhi_session.m4a" preload="metadata"></audio>
     </div>
     <div class="detail-split">
         <div class="detail-pane">
@@ -629,12 +629,12 @@
             </div>
             <div class="transcript-toggle" id="toggle1">
                 <div class="transcript-toggle-slider" id="slider1"></div>
-                <button class="transcript-toggle-btn active" onclick="switchTranscriptTab(1,'raw',this)">Raw</button>
-                <button class="transcript-toggle-btn" onclick="switchTranscriptTab(1,'refined',this)">Refined</button>
+                <button class="transcript-toggle-btn" onclick="switchTranscriptTab(1,'raw',this)">Raw</button>
+                <button class="transcript-toggle-btn active" onclick="switchTranscriptTab(1,'refined',this)">Refined</button>
             </div>
             <div class="pane-body">
-                <div class="transcript-panel active" id="transcript1-raw"><div class="transcript-scroll" id="transcript1"></div></div>
-                <div class="transcript-panel" id="transcript1-refined">
+                <div class="transcript-panel" id="transcript1-raw"><div class="transcript-scroll" id="transcript1"></div></div>
+                <div class="transcript-panel active" id="transcript1-refined">
                     <div class="review-strip" id="review-strip-1">
                         <div class="review-strip-dot"></div>
                         <div class="review-strip-label"><em id="review-count-1">0</em> need review</div>
@@ -756,29 +756,59 @@ const DATA = {
         en: {
             rec1Title: "Vidhan Sabha — Lakshvedhi Session",
             rec2Title: "Vidhan Sabha — Morning Session",
-            summary: "Two Vidhan Sabha session recordings. The Morning Session covers tabling of annual reports, adjournment motion on Gulf war situation affecting Maharashtra citizens, law and order concerns about shootings in Mumbai/Thane, and felicitation of the Indian Cricket team for winning the 2026 T20 World Cup.",
-            d1Summary: "Transcript and analysis pending.",
+            summary: "Two Vidhan Sabha session recordings. The Lakshvedhi Session covers dowry-related atrocities against women, demand for anti-dowry helpline, Flying Squad proposal, and exam fee reduction for backward class candidates. The Morning Session covers Gulf war crisis, Mumbai/Thane shootings, and T20 World Cup felicitation.",
+            d1Summary: "Lakshvedhi session covering: dowry harassment and suicides — demand for police accountability, fast-track courts for dowry cases, anti-dowry Flying Squad in every district, dedicated 24x7 helpline. Also: exam fee reduction demand for SC/ST/OBC candidates in government recruitment (50% reduction sought). Minister responds with existing helplines (103, 1091, 112) and committee-based approach.",
             d2Summary: "Morning session covering: tabling of annual reports (Animal Sciences University, OBC Welfare Corporation), adjournment motion on Gulf war affecting 9-10 lakh Maharashtra citizens in Middle East, law and order debate on shootings in Mumbai/Thane, and Chief Minister's felicitation of Indian Cricket team for 2026 T20 World Cup victory.",
             transcripts: { 1: [], 2: [] },
             transcriptsRefined: {},
             insights: {
-                1: [],
+                1: [
+                    {cat:"cat-legal", border:"border-rose", catLabel:"DOWRY", title:"Police Accountability for Dowry Complaints", body:"Demand for strict action against police officers who dismiss or refuse to register dowry complaints. Girls forced to commit suicide due to police insensitivity. Demand for fast-track courts to ensure conviction within 6 months.", tags:["Police insensitivity","Fast track courts","6-month conviction"]},
+                    {cat:"cat-governance", border:"border-amber", catLabel:"PROPOSAL", title:"Anti-Dowry Flying Squad & Helpline", body:"Proposal for dedicated Flying Squad in every district (like Anti-Corruption Bureau) to raid wedding venues for dowry transactions. Demand for state-level 24x7 anonymous anti-dowry helpline. Minister responds: existing helplines 103, 1091, 112 already operational.", tags:["Flying Squad","24x7 helpline","103, 1091, 112"]},
+                    {cat:"cat-social", border:"border-teal", catLabel:"WOMEN", title:"Action Plan for Dowry Victims", body:"Demand for time-bound action plan for rehabilitation and economic empowerment of dowry victims. Suggestion to form committee of women MLAs. Minister agrees to time-bound case resolution and notes from existing district/state/taluka committees.", tags:["Rehabilitation","Women MLA committee","Time-bound plan"]},
+                    {cat:"cat-governance", border:"border-blue", catLabel:"RECRUITMENT", title:"50% Exam Fee Reduction for Backward Classes", body:"Demand to reduce government recruitment exam fees by 50% for SC/ST/VJNT/OBC candidates. Currently only Rs 100 discount (Rs 1000 vs Rs 900). 1.2 lakh posts filled so far, 75,000 more announced in budget. Article 16 equality of opportunity cited.", tags:["50% fee reduction","SC/ST/OBC","1.2L posts filled","75K announced"]}
+                ],
                 2: [
                     {cat:"cat-governance", border:"border-teal", catLabel:"PARLIAMENT", title:"Annual Reports Tabled", body:"Animal Sciences University Nagpur 2024-25 annual report and Vasantrao Naik VJNT Development Corporation 2015-16 to 2018-19 reports tabled. Delay reasons attached.", tags:["Reports tabled","VJNT Corporation"]},
-                    {cat:"cat-social", border:"border-rose", catLabel:"GULF CRISIS", title:"Maharashtra Citizens in Gulf War Zone", body:"9-10 lakh Maharashtra citizens among 1.1 crore Indians in Gulf countries. War-zone sirens, drone attacks, missile interceptions causing panic. Airfares spiked to Rs 80,000-90,000. Demand for CM to coordinate with Indian embassies and central government for safe evacuation.", tags:["1.1 Cr Indians","9-10L from Maharashtra","Evacuation demanded"]},
-                    {cat:"cat-legal", border:"border-amber", catLabel:"LAW & ORDER", title:"Mumbai/Thane Shootings — Police Free Hand Demanded", body:"60 rounds fired outside a builder's house in Mumbra, Thane. Attackers fired at police too. Multiple incidents — Baba Siddique case, Bandra shootings. Demand for police to be given free hand to act.", tags:["60 rounds fired","Mumbra, Thane","Police firing"]},
-                    {cat:"cat-governance", border:"border-blue", catLabel:"CRICKET", title:"Indian Cricket Team Felicitation — 2026 T20 World Cup", body:"India won 3rd T20 World Cup, beating New Zealand by 96 runs at Ahmedabad. Record 255/5 in final. Sanju Samson 89(46), Abhishek Sharma 52(21). Jasprit Bumrah took 4 wickets. First team to win back-to-back and 3 T20 World Cups.", tags:["T20 World Cup 2026","255/5 record","3rd title"]}
+                    {cat:"cat-social", border:"border-rose", catLabel:"GULF CRISIS", title:"Maharashtra Citizens in Gulf War Zone", body:"9-10 lakh Maharashtra citizens among 1.1 crore Indians in Gulf countries. War-zone sirens, drone attacks, missile interceptions causing panic. Airfares spiked to Rs 80,000-90,000. Demand for CM to coordinate evacuation.", tags:["1.1 Cr Indians","9-10L from Maharashtra","Evacuation demanded"]},
+                    {cat:"cat-legal", border:"border-amber", catLabel:"LAW & ORDER", title:"Mumbai/Thane Shootings — Police Free Hand", body:"60 rounds fired outside a builder's house in Mumbra, Thane. Attackers fired at police too. Demand for police to be given free hand.", tags:["60 rounds fired","Mumbra, Thane"]},
+                    {cat:"cat-governance", border:"border-blue", catLabel:"CRICKET", title:"T20 World Cup 2026 Felicitation", body:"India won 3rd T20 World Cup, beating New Zealand by 96 runs. Record 255/5 in final. First team to win back-to-back and 3 T20 World Cups.", tags:["T20 World Cup 2026","255/5 record"]}
                 ]
             }
         },
         mr: {
             rec1Title: "विधानसभा — लक्षवेधी सत्र",
             rec2Title: "विधानसभा — सकाळचे सत्र",
-            summary: "दोन विधानसभा सत्र ध्वनिमुद्रणे. सकाळच्या सत्रात वार्षिक अहवाल सादर, आखाती युद्ध परिस्थितीवर स्थगन प्रस्ताव, मुंबई/ठाण्यातील गोळीबार प्रकरणे, आणि भारतीय क्रिकेट संघाचे 2026 T20 विश्वचषक विजयाबद्दल अभिनंदन.",
-            d1Summary: "प्रतिलेखन आणि विश्लेषण प्रलंबित.",
-            d2Summary: "सकाळचे सत्र: वार्षिक अहवाल सादर (पशुविज्ञान विद्यापीठ, OBC कल्याण महामंडळ), आखाती युद्धामुळे 9-10 लाख महाराष्ट्रीय नागरिकांवरील परिणामाबद्दल स्थगन प्रस्ताव, मुंबई/ठाण्यातील गोळीबार प्रकरणांवर कायदा-सुव्यवस्था चर्चा, आणि मुख्यमंत्र्यांचे भारतीय क्रिकेट संघाचे 2026 T20 विश्वचषक विजयाबद्दल अभिनंदन.",
+            summary: "दोन विधानसभा सत्र ध्वनिमुद्रणे. लक्षवेधी सत्रात हुंडा अत्याचार, हुंडाविरोधी helpline मागणी, Flying Squad प्रस्ताव आणि मागासवर्गीय परीक्षा-शुल्क कपातीची मागणी. सकाळच्या सत्रात आखाती युद्ध संकट, मुंबई/ठाणे गोळीबार आणि T20 विश्वचषक अभिनंदन.",
+            d1Summary: "लक्षवेधी सत्र: हुंडा छळ आणि आत्महत्या — पोलीस जबाबदारी मागणी, हुंडा प्रकरणांसाठी जलदगती न्यायालये, प्रत्येक जिल्ह्यात हुंडाविरोधी Flying Squad, समर्पित 24×7 helpline. तसेच: शासकीय नोकरभरती परीक्षा-शुल्क SC/ST/OBC उमेदवारांसाठी 50% कपात मागणी. मंत्र्यांचे उत्तर — विद्यमान helpline (103, 1091, 112) आणि समिती-आधारित दृष्टिकोन.",
+            d2Summary: "सकाळचे सत्र: वार्षिक अहवाल सादर, आखाती युद्धामुळे 9-10 लाख महाराष्ट्रीय नागरिकांवरील परिणामाबद्दल स्थगन प्रस्ताव, मुंबई/ठाण्यातील गोळीबार प्रकरणांवर कायदा-सुव्यवस्था चर्चा, आणि मुख्यमंत्र्यांचे भारतीय क्रिकेट संघाचे 2026 T20 विश्वचषक विजयाबद्दल अभिनंदन.",
             transcripts: { 1: [], 2: [] },
             transcriptsRefined: {
+                1: [
+                    {time:0, speaker:"A", role:"सदस्य", text:"तडजोड करा आणि तिथल्या तिथं आपण त्याला दुरुस्त करा असं सांगून परत पाठवतात — अध्यक्ष महोदय. मला या ठिकाणी विचारायचं — की पोलीस प्रशासनाच्या या संवेदन-शून्यतेमुळेच मुलींना आत्महत्येचा मार्ग निवडावा लागतो. अशा तक्रारी घेण्यास टाळाटाळ करणाऱ्या संबंधित पोलीस अधिकाऱ्यांवर शासनाने आतापर्यंत काय कठोर कारवाई केली आहे? तसेच, हुंडा मागणाऱ्या गुन्हेगारांमध्ये कायद्याचा धाक निर्माण करण्यासाठी शासन हे खटले Fast Track कोर्टात चालवून सहा महिन्याच्या आत शिक्षा सुनिश्चित करणार का? हा दुसरा प्रश्न, अध्यक्ष महोदय.", garbled:false},
+                    {time:40, speaker:"A", role:"सदस्य", text:"आणि तिसरा प्रश्न माझा असा आहे — की अध्यक्ष महोदय, केवळ हुंडाबंदी सप्ताह साजरा करून, radio वर जाहिराती देऊन सामाजिक कलंक काही पुसला जाणार नाही. केवळ जनजागृती हा उपाय त्या ठिकाणी नव्हे. लाचलुचपत प्रतिबंधक विभाग ज्याप्रमाणे लाच घेणाऱ्यांवर सापळा रचून कारवाई करते, त्या धर्तीवर लग्न-मंडपात होणारी हुंड्याची उघड आणि सुप्त देवाणघेवाण रोखण्यासाठी पोलीस दलाचे एक विशेष Flying Squad प्रत्येक जिल्ह्यात तैनात करण्याची शासन खबरदारी घेणार का? आणि पीडितांना आपली ओळख गोपनीय ठेवून तक्रार करता यावी यासाठी समर्पित राज्यस्तरीय 24×7 हुंडा-विरोधी helpline number शासन तातडीने सुरू करणार का?", garbled:false},
+                    {time:91, speaker:"A", role:"सदस्य", text:"अध्यक्ष महोदय, पालकांच्या डोळ्यांतील पाणी आणि मुलींच्या चितेवर रचलेली ही व्यवस्था बदलण्यासाठी शासनानं या ठिकाणी केवळ कागदी घोडे नाचवले आहेत, अध्यक्ष महोदय. मला असं त्या ठिकाणी विनंती करायची आहे — एक कालबद्ध कृती-आराखडा, ज्या Jyoti ताईंनी आणि Namita जी आणि madam नी या ठिकाणी मांडलेला आहे — त्यासाठी महिला आमदारांची एखादी समिती नेमून याविषयी एक कृती-आराखडा तयार करून त्यांचं पुनर्वसन आणि आर्थिक सक्षमीकरण कसे करता येईल यासंबंधी आपण प्रयत्न करणार आहात काय, अध्यक्ष महोदय?", garbled:false},
+                    {time:132, speaker:"B", role:"मंत्री", text:"अध्यक्ष महोदय, सन्माननीय सदस्य नितीनजी राऊत हे सभागृहाचे वरिष्ठ सदस्य आहेत. त्यांनी काही माहिती या ठिकाणी दिली आहे आणि मला असं वाटतं — सभागृहात ज्या प्रश्नावर चर्चा चालू आहे — हा निश्चितच संवेदनशील प्रश्न आहे आणि सामाजिक प्रश्न आहे. याच्यामध्ये दोन्ही बाजूंनी त्या ठिकाणी चर्चा करण्यात आली — की मुलींवर कशा पद्धतीने अत्याचार झाला, मुलीच्या कुटुंबावर कसा अत्याचार झाला; काही सदस्यांनी मांडलं की त्या माध्यमातून मुलांवरतीदेखील कसा अत्याचार झाला, त्यांच्यावरती ते कसे अडचणीमध्ये त्या ठिकाणी आले. हा सामाजिक प्रश्न आहे — याच्यामध्ये फक्त सरकारच्या वतीनं कार्यवाही करण्यात येते.", garbled:false},
+                    {time:167, speaker:"B", role:"मंत्री", text:"आणि याच्यामध्ये दोन विभाग कार्यरत आहेत — एक गृह विभाग देखील कार्यरत आहे, आणि मुळात ज्याच्यावरती सक्रियतेने काम करते ते महिला व बाल कल्याण विभाग — याच्या माध्यमातून देखील वेगवेगळे उपक्रम राबविण्यात येतात. परंतु हा सामाजिक प्रश्न असल्यामुळे इथे फक्त आपण लोकांनी चर्चा न करता, शासनानं जे उपक्रम तयार करून दिले आहेत त्या उपक्रमांची अंमलबजावणी आपापल्या मतदारसंघामध्ये होते का, आणि आपण त्याची दक्षता घेऊन त्या पद्धतीने — जसं की 26 नोव्हेंबर हा दिवस हुंडाबंदी दिन म्हणून संपूर्ण राज्यामध्ये साजरा करण्यात येतो, 26 नोव्हेंबर ते 2 डिसेंबर हा हुंडाबंदी सप्ताह त्या ठिकाणी आहे — आपण याच्याबद्दल कितपत गंभीर आहोत, आपापल्या मतदारसंघामध्ये हे कार्यक्रम त्या ठिकाणच्या प्रशासकीय अधिकाऱ्यांच्या वतीनं आपण करून घेतो की नाही, आपण कितपत त्याच्यामध्ये पुढाकार घेतो — हे आपल्यावर देखील अवलंबून आहे. म्हणून सभागृहातल्या सदस्यांना माझी विनंती आहे.", garbled:false},
+                    {time:221, speaker:"A", role:"सदस्य", text:"देतोय ते त्याचे उत्तर देतोय ना?", garbled:false},
+                    {time:223, speaker:"F", role:"सदस्य", text:"ऐका ना ऐका ऐका ऐका ऐका काय म्हणताय ऐका.", garbled:false},
+                    {time:226, speaker:"A", role:"सदस्य", text:"ज्या ज्या ज्या पद्धतीनं.", garbled:false},
+                    {time:230, speaker:"F", role:"सदस्य", text:"म्हणजे काय ऐका म्हणजे काय? आम्ही इथं एकच का करावं? आम्ही बोलता आम्ही आदर करतो. पण ते काही बोलू देता नाही.", garbled:false},
+                    {time:248, speaker:"A", role:"सदस्य", text:"याच्यामध्ये अध्यक्ष महोदय.", garbled:false},
+                    {time:250, speaker:"F", role:"सदस्य", text:"ऐका ना ऐका ऐका.", garbled:false},
+                    {time:254, speaker:"B", role:"मंत्री", text:"Already या ठिकाणी आपली जिल्हास्तरीय समिती आहे, राज्यस्तरीय समिती आहे, तालुकास्तरीय समिती आहे — या समित्यांच्या माध्यमातून त्या ठिकाणी already कार्यवाही करण्यात येते. परंतु असे जर का काही specific प्रकरण होतात, तर आपण लोकप्रतिनिधी म्हणून ते प्रकरण घेतले पाहिजे, आमच्या गृह विभागाकडे तक्रार झाली पाहिजे. साहेबांनी एक प्रश्न विचारला की helpline त्या ठिकाणी करण्यात येतील का? तर already त्या ठिकाणी महिलांकरिता helpline आहे जी 24×7 त्या ठिकाणी कार्यरत असते — क्रमांक 103, क्रमांक 1091. Emergency helpline देखील त्या ठिकाणी 112 नंबरची आहे.", garbled:false},
+                    {time:287, speaker:"B", role:"मंत्री", text:"त्याच्यावरती तक्रार आल्यानंतर आम्ही तातडीने त्याची दखल घेतो आणि त्या ठिकाणी कार्यवाही करत असतो. दुसरं — एक त्यांनी मांडणी केली की एक Flying Squad राहील का? हे आपण मागणी केली. साहेब, लग्नाचा प्रसंग हा त्या ठिकाणी दोन्ही कुटुंबांकरिता अनेक वेळेस इज्जतीचा प्रश्न असतो; हा कौटुंबिक प्रसंग असतो. अशा वेळेस त्या ठिकाणी बिना परवानगीनं शासनानं जाणं आणि कुठली कार्यवाही करणं — हे याच्यावरती एकमत होणार नाही असं मला वाटतं. त्या ठिकाणी जर का तक्रार प्राप्त झाली तर निश्चितपणे विभाग त्या ठिकाणी कार्यवाही करेल. दुसरं — आलेल्या तक्रारींकरिता कालबद्ध कालावधीमध्ये हे प्रकरण सोडवलं गेलं पाहिजे — निश्चितपणे याच्याशी आम्ही सहमत आहोत. जे जे प्रकरण असतील याच्याकरिता कालबद्ध कार्यक्रम तयार करून त्या कालबद्ध कार्यक्रमामध्ये हे सोडवण्यात येतील.", garbled:false},
+                    {time:333, speaker:"B", role:"मंत्री", text:"आपली अजून एक सूचना होती की याच्याकरिता एक समिती — महिला व बालकल्याण विभागाच्या अंतर्गत आपली विधिमंडळाची देखील याच्यामध्ये एक समिती आहे. त्या समितीचा आढावा त्या समितीने देखील वेळोवेळी आढावा घेऊन ह्या प्रकरणांवरती त्या ठिकाणी प्रकाश टाकला पाहिजे असं त्या ठिकाणी अपेक्षित आहे. आणि आपण अजून ज्या काही सूचना दिल्या त्याची नोंद घेऊन पुढील कार्यवाही शासनाच्या मार्फत करण्यात येईल.", garbled:false},
+                    {time:353, speaker:"C", role:"अध्यक्ष", text:"चला पुढे — लक्षवेधी क्रमांक दोन.", garbled:false},
+                    {time:359, speaker:"D", role:"सदस्य", text:"लक्षवेधी क्रमांक दोन — अध्यक्ष महोदय, मागासवर्गाच्या सुशिक्षित बेरोजगारांना शासकीय नोकर-भरतीचे परीक्षा-शुल्क व्यतिरिक्त केल्याप्रमाणे कमी करण्याबाबतची माझी अतिशय महत्त्वाची ही लक्षवेधी आहे. अध्यक्ष महोदय, सन 2014 पूर्वीच्या काळात जवळजवळ बंद असलेली शासकीय नोकर-भरती पुन्हा सुरू करून, तरुणांच्या हाताला रोजगार देऊन त्यांचे अधिकारी होण्याचे स्वप्न महाभरती-महामेगा भरतीच्या माध्यमातून पूर्ण करत असल्याबद्दल — अध्यक्ष महोदय — मी सन्माननीय मुख्यमंत्री महोदय, महायुतीच्या सरकारचे मनापासून अभिनंदन करते, त्यांचे आभार सुद्धा मानते.", garbled:false},
+                    {time:406, speaker:"D", role:"सदस्य", text:"अध्यक्ष महोदय, राज्यात महाभरतीच्या माध्यमातून महायुती सरकार स्थापन झाल्यानंतर आत्तापर्यंत — लिपिक, तलाठी, ग्रामसेवक, पोलीस शिपाई, अभियंता, doctor, nurse व तत्सम प्रकारची 1,20,000 पदभरती त्या ठिकाणी करण्यात आलेली आहे.", garbled:false},
+                    {time:433, speaker:"D", role:"सदस्य", text:"अध्यक्ष महोदय, आत्ताच्या अर्थसंकल्पामध्ये सुद्धा सन्माननीय मुख्यमंत्री महोदयांनी सांगितलं आहे — महाराष्ट्र लोकसेवा आयोग व इतर यंत्रणांच्या माध्यमातून 75,000 पदांची भरती ही करण्यात येणार आहे. अध्यक्ष महोदय, ही अतिशय आनंदाची बाब आहे. महाराष्ट्रातले जे सुशिक्षित तरुण आहेत त्या सुशिक्षित तरुणांना नोकरी मिळणार आहे — त्याच्याबद्दल मी पुन्हा या अर्थसंकल्पामध्ये घोषणा केल्याबद्दल मुख्यमंत्री महोदयांचे आभार मानते.", garbled:false},
+                    {time:466, speaker:"D", role:"सदस्य", text:"परंतु अध्यक्ष महोदय, ही जी पदभरती सुरू आहे — ही पदभरती होत असताना राज्यातील अनुसूचित जाती, अनुसूचित जमाती, विमुक्त जाती, भटक्या जमाती, इतर मागास प्रवर्ग व विशेष मागास प्रवर्गाच्या परीक्षार्थ्यांना राज्य सरकारच्या वतीने विविध नोकर-भरती परीक्षेसाठी खुल्या प्रवर्गाच्या बरोबरीने परीक्षा-शुल्क आकारल्या जाते. अध्यक्ष महोदय, उदाहरण द्यायचं झाल्यास — 10 February 2026 रोजी अपर पोलीस महासंचालक, गुन्हे अन्वेषण विभाग, महाराष्ट्र राज्य पुणे — यांनी भरती काढलेली आहे. सहाय्यक शासकीय दस्तावेज परीक्षक, आणि एकूण पदसंख्या अध्यक्ष महोदय 16 आहे.", garbled:false},
+                    {time:515, speaker:"D", role:"सदस्य", text:"अध्यक्ष महोदय, ही माझ्या लक्षवेधीची सुरुवात आहे — त्यामुळे मला पूर्ण पार्श्वभूमी सांगणं गरजेचं आहे. खुला प्रवर्गासाठी अध्यक्ष महोदय ₹1000 त्या ठिकाणी आकारले जातात, आणि मागास प्रवर्गासाठी अध्यक्ष महोदय ₹900 त्या ठिकाणी आकारले जातात — केवळ ₹100 त्या ठिकाणी सूट खुल्या प्रवर्गाच्या तुलनेत मागासवर्गीयांसाठी दिलेली आहे. अध्यक्ष महोदय, भरमसाठ परीक्षा-शुल्क-आकारणीमुळे उक्त उल्लेखित प्रवर्गाच्या परीक्षार्थ्यांना नोकरी-भरती अर्ज भरताना आर्थिक अडचण येत आहे. त्यामुळे खुल्या प्रवर्गाच्या तुलनेत मागासवर्गीय विद्यार्थ्यांना परीक्षा-शुल्क 50% ने कमी होणे अत्यंत गरजेचे आहे, अध्यक्ष महोदय.", garbled:false},
+                    {time:556, speaker:"D", role:"सदस्य", text:"भारतीय संविधान कलम 16 अन्वये भारतीय नागरिकांना सार्वजनिक रोजगाराबाबतीत संधीची समानता देण्यात आलेली आहे.", garbled:false},
+                    {time:563, speaker:"D", role:"सदस्य", text:"संधीच्या समानतेचे हे तत्त्व केवळ औपचारिक समानता — formal equality — नाही, तर संधीची निखळ समानता म्हणजे fair equality of opportunity त्या ठिकाणी प्रदान करते. ज्यामध्ये ऐतिहासिक सामाजिक अन्याय दूर करण्यासाठी दुर्बल घटकांसाठी विशेष तरतूद वैध मानल्या जातात. मात्र मागासवर्गीय उमेदवारांकडून खुल्या गटातील उमेदवारांप्रमाणे परीक्षा-शुल्क आकारण्यात येत असल्यामुळे एक प्रकारे रोजगार-समानतेच्या संधीचे तत्त्व डावलले जाते.", garbled:false},
+                    {time:593, speaker:"D", role:"सदस्य", text:"अध्यक्ष महोदय, मी आपल्याला एकच — म्हणजे या सभागृहाच्या माध्यमातून एकच माझा specific प्रश्न आहे, आणि तो प्रश्न म्हणजे — राज्यातील अनुसूचित जाती, अनुसूचित जमाती, विमुक्त जाती, भटक्या जमाती अ, ब, क, ड व इतर मागास प्रवर्ग आणि विशेष मागास प्रवर्गाच्या विद्यार्थ्यांना शासकीय नोकर-भरतीचे शुल्क 50% आपण कमी करणार आहात का? हा माझा specific प्रश्न आहे. अध्यक्ष महोदय, उत्तरामध्ये त्या ठिकाणी लिहिलेलं आहे की TCS कंपनी असेल किंवा इतर ज्या IBPS असेल, या institute च्या माध्यमातून या नोकर-भरतीची प्रक्रिया राबवली जाते. आणि त्यांनी त्या उत्तरामध्ये दिलेलं आहे की ही जी भरती प्रक्रिया आहे, ही पारदर्शक पद्धतीने करण्यासाठी iris scan, jammer, biometric वगैरे वगैरे.", garbled:false}
+                ],
                 2: [
                     {time:0, speaker:"A", role:"अध्यक्ष", text:"अशी व्यवस्था केली जाईल. प्रश्नोत्तराचा तास संपलेला आहे. कागदपत्रे सभागृहाच्या पटलावर ठेवणे — माननीय पशुसंवर्धन मंत्री.", garbled:false},
                     {time:9, speaker:"B", role:"मंत्री", text:"अध्यक्ष महोदय, मी आपल्या अनुमतीने महाराष्ट्र पशु व मत्स्य विज्ञान विद्यापीठ अधिनियम 1998 च्या कलम 60 अन्वये महाराष्ट्र पशु मत्स्य विज्ञान विद्यापीठ नागपूर यांचा सन 2024–2025 या वर्षाचा वार्षिक अहवाल सभागृहासमोर ठेवतो.", garbled:false},
@@ -810,12 +840,17 @@ const DATA = {
                 ]
             },
             insights: {
-                1: [],
+                1: [
+                    {cat:"cat-legal", border:"border-rose", catLabel:"हुंडा", title:"हुंडा तक्रारींवर पोलीस जबाबदारी", body:"हुंडा तक्रारी नोंदवण्यास टाळाटाळ करणाऱ्या पोलीस अधिकाऱ्यांवर कठोर कारवाईची मागणी. पोलीस संवेदनशून्यतेमुळे मुलींना आत्महत्येचा मार्ग. जलदगती न्यायालयांत 6 महिन्यांत शिक्षेची मागणी.", tags:["पोलीस संवेदनशून्यता","जलदगती न्यायालय","6 महिन्यांत शिक्षा"]},
+                    {cat:"cat-governance", border:"border-amber", catLabel:"प्रस्ताव", title:"हुंडाविरोधी Flying Squad व Helpline", body:"प्रत्येक जिल्ह्यात लाचलुचपत प्रतिबंधक विभागाच्या धर्तीवर समर्पित Flying Squad ची मागणी. राज्यस्तरीय 24×7 गोपनीय हुंडाविरोधी helpline ची मागणी. मंत्र्यांचे उत्तर: 103, 1091, 112 helpline आधीपासून कार्यरत.", tags:["Flying Squad","24×7 helpline","103, 1091, 112"]},
+                    {cat:"cat-social", border:"border-teal", catLabel:"महिला", title:"हुंडा पीडितांसाठी कृती-आराखडा", body:"हुंडा पीडितांचे पुनर्वसन आणि आर्थिक सक्षमीकरणासाठी कालबद्ध कृती-आराखड्याची मागणी. महिला आमदारांची समिती नेमण्याची सूचना. मंत्री कालबद्ध प्रकरण निवारणास सहमत, जिल्हा/राज्य/तालुका समित्यांचा उल्लेख.", tags:["पुनर्वसन","महिला आमदार समिती","कालबद्ध आराखडा"]},
+                    {cat:"cat-governance", border:"border-blue", catLabel:"भरती", title:"मागासवर्गीय परीक्षा-शुल्क 50% कपात मागणी", body:"SC/ST/विजाभज/OBC उमेदवारांसाठी शासकीय भरती परीक्षा-शुल्क 50% कमी करण्याची मागणी. सध्या फक्त ₹100 सूट (₹1000 विरुद्ध ₹900). आतापर्यंत 1.2 लाख पदभरती, अर्थसंकल्पात 75,000 अधिक घोषित. संविधान कलम 16 — संधीची समानता.", tags:["50% शुल्क कपात","SC/ST/OBC","1.2 लाख पदभरती","75 हजार घोषित"]}
+                ],
                 2: [
                     {cat:"cat-governance", border:"border-teal", catLabel:"संसद", title:"वार्षिक अहवाल सादर", body:"पशुविज्ञान विद्यापीठ नागपूर 2024-25 वार्षिक अहवाल आणि वसंतराव नाईक विजाभज विकास महामंडळ 2015-16 ते 2018-19 अहवाल सादर. विलंबाची कारणे जोडलेली.", tags:["अहवाल सादर","विजाभज महामंडळ"]},
-                    {cat:"cat-social", border:"border-rose", catLabel:"आखाती संकट", title:"आखाती युद्ध क्षेत्रात महाराष्ट्रीय नागरिक", body:"आखाती देशांत 1.1 कोटी भारतीयांपैकी 9-10 लाख महाराष्ट्रीय. युद्धक्षेत्रातील sirens, drone हल्ले, missile interception मुळे भीती. विमान भाडे ₹80,000-90,000 पर्यंत वाढलेले. मुख्यमंत्र्यांनी भारतीय दूतावासाशी समन्वय करून सुरक्षित निर्वासनाची मागणी.", tags:["1.1 कोटी भारतीय","9-10 लाख महाराष्ट्रीय","निर्वासन मागणी"]},
-                    {cat:"cat-legal", border:"border-amber", catLabel:"कायदा-सुव्यवस्था", title:"मुंबई/ठाणे गोळीबार — पोलिसांना मोकळे हात मागणी", body:"मुंब्रा ठाण्यात बांधकाम व्यावसायिकाच्या घराबाहेर 60 राउंड गोळीबार. हल्लेखोरांनी पोलिसांवरही गोळीबार केला. अनेक घटना — बाबा सिद्दीकी प्रकरण, बांद्रा गोळीबार. पोलिसांना मोकळे हात देण्याची मागणी.", tags:["60 राउंड","मुंब्रा ठाणे","पोलीस गोळीबार"]},
-                    {cat:"cat-governance", border:"border-blue", catLabel:"क्रिकेट", title:"भारतीय क्रिकेट संघाचे अभिनंदन — 2026 T20 विश्वचषक", body:"भारताने तिसरा T20 विश्वचषक जिंकला — अहमदाबाद येथे न्यूझीलंडचा 96 धावांनी पराभव. विक्रमी 255/5. संजू सॅमसन 89(46), अभिषेक शर्मा 52(21). जसप्रीत बुमराह 4 बळी. सलग दुसऱ्यांदा आणि तीनदा T20 विश्वचषक जिंकणारा पहिला संघ.", tags:["T20 विश्वचषक 2026","255/5 विक्रम","तिसरे विजेतेपद"]}
+                    {cat:"cat-social", border:"border-rose", catLabel:"आखाती संकट", title:"आखाती युद्ध क्षेत्रात महाराष्ट्रीय नागरिक", body:"आखाती देशांत 1.1 कोटी भारतीयांपैकी 9-10 लाख महाराष्ट्रीय. युद्धक्षेत्रातील sirens, drone हल्ले, missile interception मुळे भीती. विमान भाडे ₹80,000-90,000 पर्यंत वाढलेले.", tags:["1.1 कोटी भारतीय","9-10 लाख महाराष्ट्रीय","निर्वासन मागणी"]},
+                    {cat:"cat-legal", border:"border-amber", catLabel:"कायदा-सुव्यवस्था", title:"मुंबई/ठाणे गोळीबार", body:"मुंब्रा ठाण्यात बांधकाम व्यावसायिकाच्या घराबाहेर 60 राउंड गोळीबार. हल्लेखोरांनी पोलिसांवरही गोळीबार. पोलिसांना मोकळे हात देण्याची मागणी.", tags:["60 राउंड","मुंब्रा ठाणे"]},
+                    {cat:"cat-governance", border:"border-blue", catLabel:"क्रिकेट", title:"T20 विश्वचषक 2026 अभिनंदन", body:"भारताने तिसरा T20 विश्वचषक जिंकला — न्यूझीलंडचा 96 धावांनी पराभव. विक्रमी 255/5. सलग दुसऱ्यांदा आणि तीनदा T20 विश्वचषक जिंकणारा पहिला संघ.", tags:["T20 विश्वचषक 2026","255/5 विक्रम"]}
                 ]
             }
         }
@@ -850,9 +885,9 @@ function renderAll() {
     // Home texts
     document.getElementById('rec1Title').textContent = t.rec1Title;
     document.getElementById('rec2Title').textContent = t.rec2Title;
-    document.getElementById('rec1Sub').textContent = 'Pending';
+    document.getElementById('rec1Sub').textContent = '5 speakers · ~10 min';
     document.getElementById('rec2Sub').textContent = '5 speakers · ~10 min';
-    document.getElementById('rec1Tags').innerHTML = '<span class="stag stag-blue">Lakshvedhi</span>';
+    document.getElementById('rec1Tags').innerHTML = '<span class="stag stag-rose">Dowry</span><span class="stag stag-amber">Helpline</span><span class="stag stag-blue">Recruitment</span>';
     document.getElementById('rec2Tags').innerHTML = '<span class="stag stag-teal">Morning Session</span><span class="stag stag-rose">Gulf Crisis</span><span class="stag stag-blue">Cricket</span>';
     document.getElementById('summaryText').textContent = t.summary;
 
