@@ -527,11 +527,11 @@
         </div>
         <div class="meta-field">
             <div class="meta-label">Total Duration</div>
-            <div class="meta-value">Pending</div>
+            <div class="meta-value">~10 minutes</div>
         </div>
         <div class="meta-field">
             <div class="meta-label">Speakers Identified</div>
-            <div class="meta-value">Pending</div>
+            <div class="meta-value">5 speakers</div>
         </div>
         <div class="meta-field">
             <div class="meta-label">Language</div>
@@ -690,7 +690,7 @@
             <button class="speed-btn" onclick="setSpeed('audio2',1.5,this)">1.5x</button>
             <button class="speed-btn" onclick="setSpeed('audio2',2,this)">2x</button>
         </div>
-        <audio id="audio2" src="" preload="metadata"></audio>
+        <audio id="audio2" src="morning_session.mp3" preload="metadata"></audio>
     </div>
     <div class="detail-split">
         <div class="detail-pane">
@@ -700,12 +700,12 @@
             </div>
             <div class="transcript-toggle" id="toggle2">
                 <div class="transcript-toggle-slider" id="slider2"></div>
-                <button class="transcript-toggle-btn active" onclick="switchTranscriptTab(2,'raw',this)">Raw</button>
-                <button class="transcript-toggle-btn" onclick="switchTranscriptTab(2,'refined',this)">Refined</button>
+                <button class="transcript-toggle-btn" onclick="switchTranscriptTab(2,'raw',this)">Raw</button>
+                <button class="transcript-toggle-btn active" onclick="switchTranscriptTab(2,'refined',this)">Refined</button>
             </div>
             <div class="pane-body">
-                <div class="transcript-panel active" id="transcript2-raw"><div class="transcript-scroll" id="transcript2"></div></div>
-                <div class="transcript-panel" id="transcript2-refined">
+                <div class="transcript-panel" id="transcript2-raw"><div class="transcript-scroll" id="transcript2"></div></div>
+                <div class="transcript-panel active" id="transcript2-refined">
                     <div class="review-strip" id="review-strip-2">
                         <div class="review-strip-dot"></div>
                         <div class="review-strip-label"><em id="review-count-2">0</em> need review</div>
@@ -756,22 +756,68 @@ const DATA = {
         en: {
             rec1Title: "Vidhan Sabha — Lakshvedhi Session",
             rec2Title: "Vidhan Sabha — Morning Session",
-            summary: "Two Vidhan Sabha session recordings — Lakshvedhi Session and Morning Session — pending transcription and analysis.",
+            summary: "Two Vidhan Sabha session recordings. The Morning Session covers tabling of annual reports, adjournment motion on Gulf war situation affecting Maharashtra citizens, law and order concerns about shootings in Mumbai/Thane, and felicitation of the Indian Cricket team for winning the 2026 T20 World Cup.",
             d1Summary: "Transcript and analysis pending.",
-            d2Summary: "Transcript and analysis pending.",
+            d2Summary: "Morning session covering: tabling of annual reports (Animal Sciences University, OBC Welfare Corporation), adjournment motion on Gulf war affecting 9-10 lakh Maharashtra citizens in Middle East, law and order debate on shootings in Mumbai/Thane, and Chief Minister's felicitation of Indian Cricket team for 2026 T20 World Cup victory.",
             transcripts: { 1: [], 2: [] },
             transcriptsRefined: {},
-            insights: { 1: [], 2: [] }
+            insights: {
+                1: [],
+                2: [
+                    {cat:"cat-governance", border:"border-teal", catLabel:"PARLIAMENT", title:"Annual Reports Tabled", body:"Animal Sciences University Nagpur 2024-25 annual report and Vasantrao Naik VJNT Development Corporation 2015-16 to 2018-19 reports tabled. Delay reasons attached.", tags:["Reports tabled","VJNT Corporation"]},
+                    {cat:"cat-social", border:"border-rose", catLabel:"GULF CRISIS", title:"Maharashtra Citizens in Gulf War Zone", body:"9-10 lakh Maharashtra citizens among 1.1 crore Indians in Gulf countries. War-zone sirens, drone attacks, missile interceptions causing panic. Airfares spiked to Rs 80,000-90,000. Demand for CM to coordinate with Indian embassies and central government for safe evacuation.", tags:["1.1 Cr Indians","9-10L from Maharashtra","Evacuation demanded"]},
+                    {cat:"cat-legal", border:"border-amber", catLabel:"LAW & ORDER", title:"Mumbai/Thane Shootings — Police Free Hand Demanded", body:"60 rounds fired outside a builder's house in Mumbra, Thane. Attackers fired at police too. Multiple incidents — Baba Siddique case, Bandra shootings. Demand for police to be given free hand to act.", tags:["60 rounds fired","Mumbra, Thane","Police firing"]},
+                    {cat:"cat-governance", border:"border-blue", catLabel:"CRICKET", title:"Indian Cricket Team Felicitation — 2026 T20 World Cup", body:"India won 3rd T20 World Cup, beating New Zealand by 96 runs at Ahmedabad. Record 255/5 in final. Sanju Samson 89(46), Abhishek Sharma 52(21). Jasprit Bumrah took 4 wickets. First team to win back-to-back and 3 T20 World Cups.", tags:["T20 World Cup 2026","255/5 record","3rd title"]}
+                ]
+            }
         },
         mr: {
             rec1Title: "विधानसभा — लक्षवेधी सत्र",
             rec2Title: "विधानसभा — सकाळचे सत्र",
-            summary: "दोन विधानसभा सत्र ध्वनिमुद्रणे — लक्षवेधी सत्र आणि सकाळचे सत्र — प्रतिलेखन आणि विश्लेषण प्रलंबित.",
+            summary: "दोन विधानसभा सत्र ध्वनिमुद्रणे. सकाळच्या सत्रात वार्षिक अहवाल सादर, आखाती युद्ध परिस्थितीवर स्थगन प्रस्ताव, मुंबई/ठाण्यातील गोळीबार प्रकरणे, आणि भारतीय क्रिकेट संघाचे 2026 T20 विश्वचषक विजयाबद्दल अभिनंदन.",
             d1Summary: "प्रतिलेखन आणि विश्लेषण प्रलंबित.",
-            d2Summary: "प्रतिलेखन आणि विश्लेषण प्रलंबित.",
+            d2Summary: "सकाळचे सत्र: वार्षिक अहवाल सादर (पशुविज्ञान विद्यापीठ, OBC कल्याण महामंडळ), आखाती युद्धामुळे 9-10 लाख महाराष्ट्रीय नागरिकांवरील परिणामाबद्दल स्थगन प्रस्ताव, मुंबई/ठाण्यातील गोळीबार प्रकरणांवर कायदा-सुव्यवस्था चर्चा, आणि मुख्यमंत्र्यांचे भारतीय क्रिकेट संघाचे 2026 T20 विश्वचषक विजयाबद्दल अभिनंदन.",
             transcripts: { 1: [], 2: [] },
-            transcriptsRefined: {},
-            insights: { 1: [], 2: [] }
+            transcriptsRefined: {
+                2: [
+                    {time:0, speaker:"A", role:"अध्यक्ष", text:"अशी व्यवस्था केली जाईल. प्रश्नोत्तराचा तास संपलेला आहे. कागदपत्रे सभागृहाच्या पटलावर ठेवणे — माननीय पशुसंवर्धन मंत्री.", garbled:false},
+                    {time:9, speaker:"B", role:"मंत्री", text:"अध्यक्ष महोदय, मी आपल्या अनुमतीने महाराष्ट्र पशु व मत्स्य विज्ञान विद्यापीठ अधिनियम 1998 च्या कलम 60 अन्वये महाराष्ट्र पशु मत्स्य विज्ञान विद्यापीठ नागपूर यांचा सन 2024–2025 या वर्षाचा वार्षिक अहवाल सभागृहासमोर ठेवतो.", garbled:false},
+                    {time:30, speaker:"A", role:"अध्यक्ष", text:"अहवाल सभागृहासमोर ठेवण्यात आला. सदर अहवाल विधिमंडळाच्या संकेतस्थळावर उपलब्ध करून देण्यात येतील. इतर मागास बहुजन कल्याण मंत्री.", garbled:false},
+                    {time:39, speaker:"B", role:"मंत्री", text:"अध्यक्ष महोदय, मी आपल्या अनुमतीने कंपनी अधिनियम 2013 च्या कलम 394 च्या पोट कलम 2 अन्वये ‹वसंतराव नाईक› विमुक्त जाती व भटक्या जमाती विकास महामंडळ मर्यादित मुंबई यांचे 2015–2016 ते 2018–2019 या वर्षांचे अनुक्रमाने तेहतीसावा, चौतिसावा, पस्तिसावा व छत्तीसावा वार्षिक अहवाल सभागृहासमोर ठेवतो. सदरील अहवाल विधानसभेच्या पटलावर ठेवण्यात झालेल्या विलंबाची कारणे सोबत जोडलेली आहेत.", garbled:true},
+                    {time:72, speaker:"A", role:"अध्यक्ष", text:"अहवाल सभागृहासमोर ठेवण्यात आला.", garbled:false},
+                    {time:79, speaker:"A", role:"अध्यक्ष", text:"तर आज प्राप्त झालेल्या सगळ्या स्थगन प्रस्तावांना मी अनुमती दालनात नाकारलेली आहे. आज महिला दिनाचा प्रस्ताव आहे, आज budget वरती चर्चा आहे. मी सगळं नाकारलेलं असल्यामुळे मी फक्त जयंत पाटील साहेबांना एक मिनिट याच्यावरती बोलायला देतो.", garbled:false},
+                    {time:113, speaker:"D", role:"सदस्य", text:"अध्यक्ष महोदय, माझा वेगळा आहे, यांचा वेगळा आहे, किरकोळ आहे.", garbled:false},
+                    {time:122, speaker:"D", role:"सदस्य", text:"नियम 97 अन्वये पुढील स्थगन प्रस्तावाची सूचना मी दिलेली आहे.", garbled:false},
+                    {time:129, speaker:"D", role:"सदस्य", text:"ज्या अर्थी सध्या जगात युद्धजन्य परिस्थिती निर्माण झाली असून — विशेषतः Saudi Arabia, Bahrain, Qatar, Kuwait, United Arab Emirates या देशांत भयानक युद्ध सुरू आहे. या युद्धात बरेच सामान्य नागरिक मरण पावलेले असणे, ज्या अर्थी या ठिकाणी आपल्या देशातील बरेच नागरिक नोकरी-व्यवसाय विविध क्षेत्रांत कार्यरत असून सुमारे 1.1 कोटी भारतीय नागरिक राहत असून, त्यापैकी 9 ते 10 लाख नागरिक महाराष्ट्र राज्यातील असणे — हे नागरिक महाराष्ट्राच्या अर्थव्यवस्थेचे महत्त्वाचे योगदान देत असणे, आणि ज्या अर्थी युद्धजन्य परिस्थिती निर्माण झाल्यामुळे तेथे राहणाऱ्या राज्यातील कुटुंबीयांमध्ये भीती, असुरक्षितता, अनिश्चिततेचे वातावरण निर्माण झाले असणे. युद्ध सुरू असताना तेथे वाजत असलेले sirens, mobile वर येणारे security alerts, drone व missile interception चे मोठे मोठे आवाज — यामुळे तेथील भारतीय नागरिक विशेषतः राज्यातील नागरिकांमध्ये चिंतेचे वातावरण पसरलेले आहे.", garbled:false},
+                    {time:189, speaker:"D", role:"सदस्य", text:"ज्या अर्थी विशेषतः Jufair परिसर — United States Fifth Fleet हा महत्त्वाचा नौदलतळ असून, या भागात 1500 ते 2000 नागरिक राहत असून त्यांना कुटुंबीयांसह सुरक्षिततेच्या कारणास्तव व भीतीमुळे इतर ठिकाणी रस्त्यावर राहावे लागत असणे. Kuwait व Qatar येथे drone हल्ले व missile चा मारा होत असल्यामुळे बरीच मनुष्यहानी झाली असून इमारतींचेसुद्धा नुकसान झालेले असणे, त्या ठिकाणी शाळादेखील बंद असणे. ज्या अर्थी राहणाऱ्या नागरिकांच्या रोजगार-व्यवसाय-कुटुंबाच्या आर्थिक स्थैर्यावर परिणाम होणे, आणि परत भारतात येण्याचा प्रयत्न करत असताना त्यांना मर्यादित पर्याय सीमित असणे, त्यातच विमान भाडे ₹80,000 ते ₹90,000 ‹₹25,000 पर्यंत वाढलेले असणे›.", garbled:true},
+                    {time:230, speaker:"D", role:"सदस्य", text:"भारतीय नागरिक विशेषतः राज्यातील नागरिकांत पसरलेली भीतीचे वातावरण — आणि म्हणून राज्य शासनाने या ठिकाणी असलेले महाराष्ट्र मंडळे व मराठी सम-प्रतिनिधींशी तातडीने संपर्क करून, व भारतीय दूतावासाशी समन्वय साधून त्यांना मदत व सुरक्षित पुनर्वसनासाठी व भारतात परतण्यासाठी नागरिकांची माहिती संकलित करून केंद्र शासनाशी समन्वय करण्याची नितांत आवश्यकता आहे. आणि म्हणून माननीय मुख्यमंत्री महोदयांनी याच्यात विशेष बैठक आयोजित करावी आणि विशेष प्रयत्न मराठी माणसांना परत आणण्याचे करावेत. यावर निवेदन करावे.", garbled:false},
+                    {time:267, speaker:"A", role:"अध्यक्ष", text:"आता नाही, आता नाही.", garbled:false},
+                    {time:281, speaker:"A", role:"अध्यक्ष", text:"ठीक आहे. मी या संदर्भात — एक मिनिट बसून घ्या — या संदर्भात यापूर्वीही या सभागृहात हा मुद्दा मांडला गेलेला आहे, आणि सन्माननीय मुख्यमंत्र्यांनी त्या संदर्भात सभागृहाला address केलेला आहे. चला पुढे.", garbled:false},
+                    {time:299, speaker:"A", role:"अध्यक्ष", text:"चला पुढे. चला पुढे. थर्टी सेकंद. दहा सेकंदात बोला. चला.", garbled:false},
+                    {time:305, speaker:"C", role:"सदस्य", text:"अध्यक्ष महोदय, मुंबई शहरात चित्रपट निर्माता, बांधकाम व्यवसायिक, celebrity घराबाहेर गोळीबार करण्याच्या वाढत्या घटनांबाबत — अध्यक्ष महोदय, मुंबई आणि ठाणा — 7 March 2026 रोजी पहाटे सुमारे पाच वाजता, ठाणे जिल्ह्यामध्ये मुंब्रा ‹कौसा परिषद› social media influencer बांधकाम व्यवसायिक ‹नदी मोहिनीतून› खान उर्फ Baba Khan यांच्या घराबाहेर गोळीबार झाला, आणि त्या गोळीबार करताना त्यांनी 60 fire केले आहेत. अध्यक्ष महोदय, 60 दा त्यांनी fire केले आहेत.", garbled:true},
+                    {time:338, speaker:"C", role:"सदस्य", text:"आणि अध्यक्ष महोदय तिकडे पोलीस जेव्हा गेले त्यांनी पोलिसांवरती पण fire केलेला आहे. आणि मला आश्चर्य वाटतं मुख्यमंत्री साहेब — आपल्याला मी काम करताना बघितलं मागच्या टाईमावर. एक शब्द आपण जेव्हा meeting मध्ये द्यायचा अख्ख्या महाराष्ट्रामध्ये कोणाची हिंमत नाही व्हायची. आज पोलीस समोर असतात, पोलिसांवरती fire करतात, आणि पोलीस त्यांच्यावरती return fire करत नाही. दोन-तीन घटना अशी घडलेली आहेत. पोलिसांसमोर firing झालेला आहे — एक Baba Siddique ची घटना घ्या, त्यांनी हत्याराचा वापर केलेला आहे — इथे पण दोन पोलीस होते, इथेही करण्यात आलं. आणि इथे Bandra मध्ये पण पोलिसांसमोर झालेलं आहे.", garbled:false},
+                    {time:371, speaker:"A", role:"अध्यक्ष", text:"‹असलम शेख› साहेब बसा.", garbled:true},
+                    {time:373, speaker:"C", role:"सदस्य", text:"मुख्यमंत्री महोदय, बरं पोलिसांना free hand देण्यात यावा.", garbled:false},
+                    {time:376, speaker:"A", role:"अध्यक्ष", text:"ठीक आहे. सन्माननीय मुख्यमंत्र्यांचा प्रस्ताव. बसून घ्या. प्रस्ताव बसून घ्या. नाही नाही बैठिए प्रस्ताव के बाद, प्रस्ताव के बाद, बैठिए प्रस्ताव के बाद.", garbled:false},
+                    {time:397, speaker:"E", role:"मुख्यमंत्री", text:"जितेंद्र आव्हाड साहेब, या विषयात मी निवेदन करतो.", garbled:false},
+                    {time:404, speaker:"E", role:"मुख्यमंत्री", text:"अध्यक्ष महोदय, आज सभागृहामध्ये भारतीय क्रिकेट संघाचे अभिनंदन करताना मला अतिशय आनंद होतो आहे, आणि अभिमान देखील वाटतो आहे. भारतीय Cricket संघाने 2026 च्या T20 World Cup स्पर्धेत शानदार कामगिरी करत अंतिम सामन्यामध्ये New Zealand संघाचा पराभव केला आणि 96 धावांनी विजय मिळवला.", garbled:false},
+                    {time:435, speaker:"E", role:"मुख्यमंत्री", text:"या विजयासह भारताने तिसऱ्यांदा T20 World Cup जिंकला. तीन वेळा T20 World Cup जिंकणारा पहिला देश हा आपला भारत झालेला आहे. तसंच सलग दुसऱ्यांदा T20 चषक जिंकणारा देखील पहिला देश आपला भारत झालेला आहे.", garbled:false},
+                    {time:460, speaker:"E", role:"मुख्यमंत्री", text:"जगातल्या सर्वात मोठ्या अशा Ahmedabad येथील Narendra Modi Stadium वर जो अंतिम सामना झाला, त्यात भारताने 20 षटकांमध्ये 5 बाद 255 धावांचा विक्रमी डोंगर त्या ठिकाणी उभा केला. टी ट्वेंटी विश्वचषकाच्या अंतिम सामन्यातला आजपर्यंतचा हा सर्वाधिक score आहे — हे देखील अत्यंत महत्त्वाचं आहे. आणि भारतीय गोलंदाजांनी New Zealand संघाचा डाव मात्र 159 धावांमध्ये त्या ठिकाणी गुंडाळला.", garbled:false},
+                    {time:498, speaker:"E", role:"मुख्यमंत्री", text:"विशेषतः आमच्या फलंदाजांनी अतिशय उत्कृष्ट कामगिरी केली. Sanju Samson, ज्यांनी गेले तीनही सामने भारताला विजयाकडे नेलं — त्यांनी 46 चेंडूत 89 धावा या ठिकाणी काढून संघाला भक्कम पाया दिला. Abhishek Sharma यांनी fastest fifty त्या ठिकाणी करत 21 चेंडूत 52 धावा त्या ठिकाणी काढल्या. ‹Ishant Kishan› यांनी 25 चेंडूत 54 धावा या ठिकाणी काढल्या, आणि एक अतिशय जलद अशा प्रकारचं अर्धशतक केलं.", garbled:true},
+                    {time:552, speaker:"E", role:"मुख्यमंत्री", text:"Tilak Varma यांनी देखील, Shivam Dube यांनी देखील आपल्या संघाच्या धावसंख्येत महत्त्वाची भर पाडली. गोलंदाजांनीही अतिशय उत्तम योगदान दिलं.", garbled:false},
+                    {time:565, speaker:"E", role:"मुख्यमंत्री", text:"Jasprit Bumrah यांनी चार बळी घेत निर्णायक अशा पद्धतीनं या ठिकाणी bowling केली, आणि विशेषतः या संपूर्ण tournament मध्ये सर्वाधिक economical bowler म्हणून त्यांनी कमीत कमी धावा देत भारतीय संघाला त्या ठिकाणी जिंकवलं. आपल्याला माहीत आहे — Mumbai त झालेल्या semifinal मध्येही त्यांचाच over हा निर्णायक ठरला.", garbled:false},
+                    {time:598, speaker:"E", role:"मुख्यमंत्री", text:"ज्या वेळी अटीतटीची वेळ होती, त्या वेळी एक अतिशय चांगला over टाकून त्यांनी ती संपूर्ण match बदलण्याचं काम केलं. Axar Patel यांनी देखील तीन बळी घेऊन त्या ठिकाणी संघाला भक्कम आधार दिला. आणि म्हणून फलंदाजी आणि गोलंदाजी या दोन्ही क्षेत्रांमध्ये भारतीय चमूने अत्यंत उत्तम अशा प्रकारचं काम केलेलं आपण सगळ्यांनी बघितलं.", garbled:false}
+                ]
+            },
+            insights: {
+                1: [],
+                2: [
+                    {cat:"cat-governance", border:"border-teal", catLabel:"संसद", title:"वार्षिक अहवाल सादर", body:"पशुविज्ञान विद्यापीठ नागपूर 2024-25 वार्षिक अहवाल आणि वसंतराव नाईक विजाभज विकास महामंडळ 2015-16 ते 2018-19 अहवाल सादर. विलंबाची कारणे जोडलेली.", tags:["अहवाल सादर","विजाभज महामंडळ"]},
+                    {cat:"cat-social", border:"border-rose", catLabel:"आखाती संकट", title:"आखाती युद्ध क्षेत्रात महाराष्ट्रीय नागरिक", body:"आखाती देशांत 1.1 कोटी भारतीयांपैकी 9-10 लाख महाराष्ट्रीय. युद्धक्षेत्रातील sirens, drone हल्ले, missile interception मुळे भीती. विमान भाडे ₹80,000-90,000 पर्यंत वाढलेले. मुख्यमंत्र्यांनी भारतीय दूतावासाशी समन्वय करून सुरक्षित निर्वासनाची मागणी.", tags:["1.1 कोटी भारतीय","9-10 लाख महाराष्ट्रीय","निर्वासन मागणी"]},
+                    {cat:"cat-legal", border:"border-amber", catLabel:"कायदा-सुव्यवस्था", title:"मुंबई/ठाणे गोळीबार — पोलिसांना मोकळे हात मागणी", body:"मुंब्रा ठाण्यात बांधकाम व्यावसायिकाच्या घराबाहेर 60 राउंड गोळीबार. हल्लेखोरांनी पोलिसांवरही गोळीबार केला. अनेक घटना — बाबा सिद्दीकी प्रकरण, बांद्रा गोळीबार. पोलिसांना मोकळे हात देण्याची मागणी.", tags:["60 राउंड","मुंब्रा ठाणे","पोलीस गोळीबार"]},
+                    {cat:"cat-governance", border:"border-blue", catLabel:"क्रिकेट", title:"भारतीय क्रिकेट संघाचे अभिनंदन — 2026 T20 विश्वचषक", body:"भारताने तिसरा T20 विश्वचषक जिंकला — अहमदाबाद येथे न्यूझीलंडचा 96 धावांनी पराभव. विक्रमी 255/5. संजू सॅमसन 89(46), अभिषेक शर्मा 52(21). जसप्रीत बुमराह 4 बळी. सलग दुसऱ्यांदा आणि तीनदा T20 विश्वचषक जिंकणारा पहिला संघ.", tags:["T20 विश्वचषक 2026","255/5 विक्रम","तिसरे विजेतेपद"]}
+                ]
+            }
         }
     }
 };
@@ -804,11 +850,16 @@ function renderAll() {
     // Home texts
     document.getElementById('rec1Title').textContent = t.rec1Title;
     document.getElementById('rec2Title').textContent = t.rec2Title;
+    document.getElementById('rec1Sub').textContent = 'Pending';
+    document.getElementById('rec2Sub').textContent = '5 speakers · ~10 min';
+    document.getElementById('rec1Tags').innerHTML = '<span class="stag stag-blue">Lakshvedhi</span>';
+    document.getElementById('rec2Tags').innerHTML = '<span class="stag stag-teal">Morning Session</span><span class="stag stag-rose">Gulf Crisis</span><span class="stag stag-blue">Cricket</span>';
     document.getElementById('summaryText').textContent = t.summary;
 
     // Detail texts
     document.getElementById('detail1Title').textContent = t.rec1Title;
     document.getElementById('detail2Title').textContent = t.rec2Title;
+    document.getElementById('detail2Sub').textContent = '5 speakers identified · ~10 minutes';
     document.getElementById('d1Summary').textContent = t.d1Summary;
     document.getElementById('d2Summary').textContent = t.d2Summary;
 
