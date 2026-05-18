@@ -498,7 +498,6 @@
         </a>
         <div class="header-right">
             <select class="lang-select" id="langSelect" onchange="switchLanguage(this.value)">
-                <option value="en">English</option>
                 <option value="mr" selected>Marathi</option>
             </select>
             <a class="header-link" href="https://predixion.ai" target="_blank">predixion.ai</a>
@@ -627,14 +626,10 @@
                 <div class="pane-icon pane-icon-t"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--blue-600)" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
                 <div class="pane-label">Transcript</div>
             </div>
-            <div class="transcript-toggle" id="toggle1">
-                <div class="transcript-toggle-slider" id="slider1"></div>
-                <button class="transcript-toggle-btn" onclick="switchTranscriptTab(1,'raw',this)">Raw</button>
-                <button class="transcript-toggle-btn active" onclick="switchTranscriptTab(1,'refined',this)">Refined</button>
             </div>
             <div class="pane-body">
-                <div class="transcript-panel" id="transcript1-raw"><div class="transcript-scroll" id="transcript1"></div></div>
-                <div class="transcript-panel active" id="transcript1-refined">
+</div>
+                <div id="transcript1-refined">
                     <div class="review-strip" id="review-strip-1">
                         <div class="review-strip-dot"></div>
                         <div class="review-strip-label"><em id="review-count-1">0</em> need review</div>
@@ -698,14 +693,10 @@
                 <div class="pane-icon pane-icon-t"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--blue-600)" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
                 <div class="pane-label">Transcript</div>
             </div>
-            <div class="transcript-toggle" id="toggle2">
-                <div class="transcript-toggle-slider" id="slider2"></div>
-                <button class="transcript-toggle-btn" onclick="switchTranscriptTab(2,'raw',this)">Raw</button>
-                <button class="transcript-toggle-btn active" onclick="switchTranscriptTab(2,'refined',this)">Refined</button>
             </div>
             <div class="pane-body">
-                <div class="transcript-panel" id="transcript2-raw"><div class="transcript-scroll" id="transcript2"></div></div>
-                <div class="transcript-panel active" id="transcript2-refined">
+</div>
+                <div id="transcript2-refined">
                     <div class="review-strip" id="review-strip-2">
                         <div class="review-strip-dot"></div>
                         <div class="review-strip-label"><em id="review-count-2">0</em> need review</div>
@@ -901,7 +892,7 @@ const DATA = {
 // ════════════════════════════════════════════════════════════════
 // STATE
 // ════════════════════════════════════════════════════════════════
-let currentLang = 'mr';
+let currentLang = "mr";
 let renamingKey = null; // e.g. "1-A"
 
 // ════════════════════════════════════════════════════════════════
